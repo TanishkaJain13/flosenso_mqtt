@@ -1,0 +1,818 @@
+2026-05-05 14:29:09  INFO      mqtt_service  ============================================================
+2026-05-05 14:29:09  INFO      mqtt_service    Flosenso MQTT Ingestion Service  (dual-broker)
+2026-05-05 14:29:09  INFO      mqtt_service  ============================================================
+2026-05-05 14:31:10  INFO      __main__  Skipping POSIX signal handlers (not running on main thread, e.g. Streamlit)
+2026-05-05 14:31:10  INFO      __main__  ============================================================
+2026-05-05 14:31:10  INFO      __main__  HiveMQ Service Starting (broker_name=HiveMQ-Cloud)
+2026-05-05 14:31:10  INFO      __main__  ============================================================
+2026-05-05 14:31:10  INFO      database  Database initialised at mqtt_data.db
+2026-05-05 14:31:10  INFO      __main__  Database initialised (shared schema) at mqtt_data.db
+2026-05-05 14:31:10  INFO      __main__  Database worker thread started
+2026-05-05 14:31:10  INFO      __main__  TLS enabled for secure connection
+2026-05-05 14:31:10  INFO      __main__  Connecting to broker HiveMQ-Cloud at b9ff4eeb544e4ac18142a019bc399b43.s2.eu.hivemq.cloud:8883
+2026-05-05 14:31:11  INFO      __main__  Starting MQTT loop...
+2026-05-05 14:31:11  INFO      __main__  Connected successfully to broker (HiveMQ-Cloud)
+2026-05-05 14:31:11  INFO      __main__  Subscribed to topic: #
+2026-05-05 14:31:11  INFO      __main__  Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-05 14:31:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:31:20  INFO      __main__  Rate: 5.20 msg/sec | Total: 52 messages
+2026-05-05 14:31:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:31:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:31:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:31:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:31:30  INFO      __main__  Rate: 6.69 msg/sec | Total: 120 messages
+2026-05-05 14:31:41  INFO      __main__  Rate: 5.32 msg/sec | Total: 174 messages
+2026-05-05 14:31:51  INFO      __main__  Rate: 6.00 msg/sec | Total: 235 messages
+2026-05-05 14:32:01  INFO      __main__  Rate: 5.24 msg/sec | Total: 288 messages
+2026-05-05 14:32:11  INFO      __main__  Rate: 5.67 msg/sec | Total: 345 messages
+2026-05-05 14:32:21  INFO      __main__  Rate: 6.26 msg/sec | Total: 408 messages
+2026-05-05 14:32:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:32:31  INFO      __main__  Rate: 6.42 msg/sec | Total: 473 messages
+2026-05-05 14:32:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:32:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:32:41  INFO      __main__  Rate: 4.97 msg/sec | Total: 523 messages
+2026-05-05 14:32:51  INFO      __main__  Rate: 6.12 msg/sec | Total: 585 messages
+2026-05-05 14:33:01  INFO      __main__  Rate: 5.87 msg/sec | Total: 644 messages
+2026-05-05 14:33:11  INFO      __main__  Rate: 5.18 msg/sec | Total: 696 messages
+2026-05-05 14:33:21  INFO      __main__  Rate: 5.28 msg/sec | Total: 749 messages
+2026-05-05 14:33:31  INFO      __main__  Rate: 5.06 msg/sec | Total: 800 messages
+2026-05-05 14:33:42  INFO      __main__  Rate: 5.40 msg/sec | Total: 855 messages
+2026-05-05 14:33:52  INFO      __main__  Rate: 6.16 msg/sec | Total: 917 messages
+2026-05-05 14:34:02  INFO      __main__  Rate: 5.07 msg/sec | Total: 968 messages
+2026-05-05 14:34:12  INFO      __main__  Rate: 4.77 msg/sec | Total: 1016 messages
+2026-05-05 14:34:22  INFO      __main__  Rate: 4.57 msg/sec | Total: 1062 messages
+2026-05-05 14:34:32  INFO      __main__  Rate: 5.62 msg/sec | Total: 1119 messages
+2026-05-05 14:34:42  INFO      __main__  Rate: 5.13 msg/sec | Total: 1171 messages
+2026-05-05 14:34:52  INFO      __main__  Rate: 4.86 msg/sec | Total: 1220 messages
+2026-05-05 14:35:02  INFO      __main__  Rate: 5.49 msg/sec | Total: 1275 messages
+2026-05-05 14:35:12  INFO      __main__  Rate: 5.19 msg/sec | Total: 1327 messages
+2026-05-05 14:35:22  INFO      __main__  Rate: 4.87 msg/sec | Total: 1376 messages
+2026-05-05 14:35:33  INFO      __main__  Rate: 6.90 msg/sec | Total: 1446 messages
+2026-05-05 14:35:43  INFO      __main__  Rate: 6.38 msg/sec | Total: 1510 messages
+2026-05-05 14:35:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:35:53  INFO      __main__  Rate: 5.21 msg/sec | Total: 1563 messages
+2026-05-05 14:35:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:35:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:35:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:35:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 14:36:03  INFO      __main__  Rate: 6.08 msg/sec | Total: 1625 messages
+2026-05-05 14:36:13  INFO      __main__  Rate: 5.52 msg/sec | Total: 1681 messages
+2026-05-05 14:36:23  INFO      __main__  Rate: 6.71 msg/sec | Total: 1749 messages
+2026-05-05 14:36:33  INFO      __main__  Rate: 5.88 msg/sec | Total: 1808 messages
+2026-05-05 14:36:43  INFO      __main__  Rate: 5.41 msg/sec | Total: 1863 messages
+2026-05-05 14:36:53  INFO      __main__  Rate: 5.18 msg/sec | Total: 1915 messages
+2026-05-05 14:37:04  INFO      __main__  Rate: 5.04 msg/sec | Total: 1966 messages
+2026-05-05 14:37:14  INFO      __main__  Rate: 5.92 msg/sec | Total: 2026 messages
+2026-05-05 14:37:24  INFO      __main__  Rate: 5.41 msg/sec | Total: 2081 messages
+2026-05-05 14:37:34  INFO      __main__  Rate: 6.36 msg/sec | Total: 2145 messages
+2026-05-05 14:37:44  INFO      __main__  Rate: 5.27 msg/sec | Total: 2198 messages
+2026-05-05 14:37:54  INFO      __main__  Rate: 4.27 msg/sec | Total: 2241 messages
+2026-05-05 14:38:04  INFO      __main__  Rate: 5.77 msg/sec | Total: 2299 messages
+2026-05-05 14:38:14  INFO      __main__  Rate: 5.62 msg/sec | Total: 2356 messages
+2026-05-05 14:38:24  INFO      __main__  Rate: 5.82 msg/sec | Total: 2415 messages
+2026-05-05 14:38:34  INFO      __main__  Rate: 6.88 msg/sec | Total: 2484 messages
+2026-05-05 14:38:44  INFO      __main__  Rate: 5.74 msg/sec | Total: 2542 messages
+2026-05-05 14:38:55  INFO      __main__  Rate: 4.81 msg/sec | Total: 2591 messages
+2026-05-05 14:39:05  INFO      __main__  Rate: 5.10 msg/sec | Total: 2643 messages
+2026-05-05 14:39:15  INFO      __main__  Rate: 5.92 msg/sec | Total: 2703 messages
+2026-05-05 14:39:25  INFO      __main__  Rate: 5.66 msg/sec | Total: 2760 messages
+2026-05-05 14:39:35  INFO      __main__  Rate: 4.43 msg/sec | Total: 2805 messages
+2026-05-05 14:39:45  INFO      __main__  Rate: 5.19 msg/sec | Total: 2857 messages
+2026-05-05 14:39:55  INFO      __main__  Rate: 5.08 msg/sec | Total: 2908 messages
+2026-05-05 14:40:05  INFO      __main__  Rate: 5.77 msg/sec | Total: 2966 messages
+2026-05-05 14:40:15  INFO      __main__  Rate: 4.95 msg/sec | Total: 3016 messages
+2026-05-05 14:40:26  INFO      __main__  Rate: 5.37 msg/sec | Total: 3070 messages
+2026-05-05 14:40:36  INFO      __main__  Rate: 4.18 msg/sec | Total: 3112 messages
+2026-05-05 14:40:46  INFO      __main__  Rate: 5.56 msg/sec | Total: 3168 messages
+2026-05-05 14:40:56  INFO      __main__  Rate: 5.06 msg/sec | Total: 3219 messages
+2026-05-05 14:41:06  INFO      __main__  Rate: 7.08 msg/sec | Total: 3291 messages
+2026-05-05 14:41:16  INFO      __main__  Rate: 6.39 msg/sec | Total: 3355 messages
+2026-05-05 14:41:26  INFO      __main__  Rate: 5.37 msg/sec | Total: 3409 messages
+2026-05-05 14:41:36  INFO      __main__  Rate: 5.59 msg/sec | Total: 3465 messages
+2026-05-05 14:41:46  INFO      __main__  Rate: 5.68 msg/sec | Total: 3522 messages
+2026-05-05 14:41:56  INFO      __main__  Rate: 5.68 msg/sec | Total: 3580 messages
+2026-05-05 14:42:06  INFO      __main__  Rate: 4.90 msg/sec | Total: 3630 messages
+2026-05-05 14:42:16  INFO      __main__  Rate: 6.95 msg/sec | Total: 3700 messages
+2026-05-05 14:42:27  INFO      __main__  Rate: 5.56 msg/sec | Total: 3756 messages
+2026-05-05 14:42:37  INFO      __main__  Rate: 4.69 msg/sec | Total: 3803 messages
+2026-05-05 14:42:47  INFO      __main__  Rate: 4.94 msg/sec | Total: 3853 messages
+2026-05-05 14:42:57  INFO      __main__  Rate: 5.36 msg/sec | Total: 3907 messages
+2026-05-05 14:43:07  INFO      __main__  Rate: 5.98 msg/sec | Total: 3967 messages
+2026-05-05 14:43:17  INFO      __main__  Rate: 4.95 msg/sec | Total: 4017 messages
+2026-05-05 14:43:27  INFO      __main__  Rate: 4.44 msg/sec | Total: 4062 messages
+2026-05-05 14:43:37  INFO      __main__  Rate: 5.88 msg/sec | Total: 4121 messages
+2026-05-05 14:43:47  INFO      __main__  Rate: 6.58 msg/sec | Total: 4188 messages
+2026-05-05 14:43:57  INFO      __main__  Rate: 6.70 msg/sec | Total: 4256 messages
+2026-05-05 14:44:07  INFO      __main__  Rate: 4.28 msg/sec | Total: 4299 messages
+2026-05-05 14:44:18  INFO      __main__  Rate: 4.84 msg/sec | Total: 4348 messages
+2026-05-05 14:44:28  INFO      __main__  Rate: 6.60 msg/sec | Total: 4415 messages
+2026-05-05 14:44:38  INFO      __main__  Rate: 6.79 msg/sec | Total: 4484 messages
+2026-05-05 14:44:48  INFO      __main__  Rate: 6.98 msg/sec | Total: 4554 messages
+2026-05-05 14:44:58  INFO      __main__  Rate: 6.67 msg/sec | Total: 4622 messages
+2026-05-05 14:45:08  INFO      __main__  Rate: 5.14 msg/sec | Total: 4674 messages
+2026-05-05 14:45:18  INFO      __main__  Rate: 6.38 msg/sec | Total: 4738 messages
+2026-05-05 14:45:28  INFO      __main__  Rate: 4.75 msg/sec | Total: 4786 messages
+2026-05-05 14:45:38  INFO      __main__  Rate: 5.75 msg/sec | Total: 4844 messages
+2026-05-05 14:45:48  INFO      __main__  Rate: 5.19 msg/sec | Total: 4896 messages
+2026-05-05 14:45:58  INFO      __main__  Rate: 6.59 msg/sec | Total: 4962 messages
+2026-05-05 14:46:08  INFO      __main__  Rate: 5.70 msg/sec | Total: 5019 messages
+2026-05-05 14:46:19  INFO      __main__  Rate: 5.30 msg/sec | Total: 5073 messages
+2026-05-05 14:46:29  INFO      __main__  Rate: 5.53 msg/sec | Total: 5129 messages
+2026-05-05 14:46:39  INFO      __main__  Rate: 5.49 msg/sec | Total: 5184 messages
+2026-05-05 14:46:49  INFO      __main__  Rate: 4.91 msg/sec | Total: 5234 messages
+2026-05-05 14:46:59  INFO      __main__  Rate: 4.88 msg/sec | Total: 5283 messages
+2026-05-05 14:47:09  INFO      __main__  Rate: 4.62 msg/sec | Total: 5330 messages
+2026-05-05 14:47:19  INFO      __main__  Rate: 5.55 msg/sec | Total: 5386 messages
+2026-05-05 14:47:29  INFO      __main__  Rate: 5.31 msg/sec | Total: 5440 messages
+2026-05-05 14:47:40  INFO      __main__  Rate: 5.81 msg/sec | Total: 5499 messages
+2026-05-05 14:47:50  INFO      __main__  Rate: 6.82 msg/sec | Total: 5568 messages
+2026-05-05 14:48:00  INFO      __main__  Rate: 5.73 msg/sec | Total: 5626 messages
+2026-05-05 14:48:10  INFO      __main__  Rate: 5.69 msg/sec | Total: 5683 messages
+2026-05-05 14:48:20  INFO      __main__  Rate: 4.85 msg/sec | Total: 5732 messages
+2026-05-05 14:48:30  INFO      __main__  Rate: 6.69 msg/sec | Total: 5799 messages
+2026-05-05 14:48:40  INFO      __main__  Rate: 4.18 msg/sec | Total: 5841 messages
+2026-05-05 14:48:50  INFO      __main__  Rate: 4.92 msg/sec | Total: 5891 messages
+2026-05-05 14:49:00  INFO      __main__  Rate: 4.75 msg/sec | Total: 5939 messages
+2026-05-05 14:49:10  INFO      __main__  Rate: 5.70 msg/sec | Total: 5996 messages
+2026-05-05 14:49:20  INFO      __main__  Rate: 5.08 msg/sec | Total: 6047 messages
+2026-05-05 14:49:30  INFO      __main__  Rate: 6.27 msg/sec | Total: 6110 messages
+2026-05-05 14:49:41  INFO      __main__  Rate: 4.54 msg/sec | Total: 6156 messages
+2026-05-05 14:49:51  INFO      __main__  Rate: 5.57 msg/sec | Total: 6212 messages
+2026-05-05 14:50:01  INFO      __main__  Rate: 5.08 msg/sec | Total: 6263 messages
+2026-05-05 14:50:11  INFO      __main__  Rate: 5.14 msg/sec | Total: 6315 messages
+2026-05-05 14:50:21  INFO      __main__  Rate: 6.18 msg/sec | Total: 6377 messages
+2026-05-05 14:50:31  INFO      __main__  Rate: 7.26 msg/sec | Total: 6451 messages
+2026-05-05 14:50:41  INFO      __main__  Rate: 4.95 msg/sec | Total: 6501 messages
+2026-05-05 14:50:51  INFO      __main__  Rate: 5.12 msg/sec | Total: 6553 messages
+2026-05-05 14:51:01  INFO      __main__  Rate: 7.15 msg/sec | Total: 6625 messages
+2026-05-05 14:51:11  INFO      __main__  Rate: 5.34 msg/sec | Total: 6679 messages
+2026-05-05 14:51:22  INFO      __main__  Rate: 5.61 msg/sec | Total: 6736 messages
+2026-05-05 14:51:32  INFO      __main__  Rate: 5.78 msg/sec | Total: 6794 messages
+2026-05-05 14:51:42  INFO      __main__  Rate: 6.59 msg/sec | Total: 6860 messages
+2026-05-05 14:51:52  INFO      __main__  Rate: 5.74 msg/sec | Total: 6918 messages
+2026-05-05 14:52:02  INFO      __main__  Rate: 6.09 msg/sec | Total: 6979 messages
+2026-05-05 14:52:12  INFO      __main__  Rate: 6.48 msg/sec | Total: 7044 messages
+2026-05-05 14:52:22  INFO      __main__  Rate: 5.71 msg/sec | Total: 7102 messages
+2026-05-05 14:52:32  INFO      __main__  Rate: 5.85 msg/sec | Total: 7161 messages
+2026-05-05 14:52:42  INFO      __main__  Rate: 6.76 msg/sec | Total: 7230 messages
+2026-05-05 14:52:52  INFO      __main__  Rate: 6.60 msg/sec | Total: 7296 messages
+2026-05-05 14:53:02  INFO      __main__  Rate: 5.75 msg/sec | Total: 7354 messages
+2026-05-05 14:53:12  INFO      __main__  Rate: 5.43 msg/sec | Total: 7409 messages
+2026-05-05 14:53:22  INFO      __main__  Rate: 6.09 msg/sec | Total: 7470 messages
+2026-05-05 14:53:32  INFO      __main__  Rate: 6.05 msg/sec | Total: 7531 messages
+2026-05-05 14:53:43  INFO      __main__  Rate: 7.15 msg/sec | Total: 7603 messages
+2026-05-05 14:53:53  INFO      __main__  Rate: 6.05 msg/sec | Total: 7664 messages
+2026-05-05 14:54:03  INFO      __main__  Rate: 6.38 msg/sec | Total: 7728 messages
+2026-05-05 14:54:13  INFO      __main__  Rate: 6.73 msg/sec | Total: 7796 messages
+2026-05-05 14:54:23  INFO      __main__  Rate: 6.42 msg/sec | Total: 7861 messages
+2026-05-05 14:54:33  INFO      __main__  Rate: 5.58 msg/sec | Total: 7917 messages
+2026-05-05 14:54:43  INFO      __main__  Rate: 6.30 msg/sec | Total: 7981 messages
+2026-05-05 14:54:53  INFO      __main__  Rate: 7.17 msg/sec | Total: 8053 messages
+2026-05-05 14:55:03  INFO      __main__  Rate: 6.18 msg/sec | Total: 8115 messages
+2026-05-05 14:55:13  INFO      __main__  Rate: 6.04 msg/sec | Total: 8176 messages
+2026-05-05 14:55:23  INFO      __main__  Rate: 6.48 msg/sec | Total: 8241 messages
+2026-05-05 14:55:33  INFO      __main__  Rate: 5.67 msg/sec | Total: 8298 messages
+2026-05-05 14:55:44  INFO      __main__  Rate: 5.70 msg/sec | Total: 8356 messages
+2026-05-05 14:55:54  INFO      __main__  Rate: 6.61 msg/sec | Total: 8423 messages
+2026-05-05 14:56:04  INFO      __main__  Rate: 6.18 msg/sec | Total: 8486 messages
+2026-05-05 14:56:14  INFO      __main__  Rate: 6.37 msg/sec | Total: 8550 messages
+2026-05-05 14:56:24  INFO      __main__  Rate: 5.08 msg/sec | Total: 8601 messages
+2026-05-05 14:56:34  INFO      __main__  Rate: 5.48 msg/sec | Total: 8656 messages
+2026-05-05 14:56:44  INFO      __main__  Rate: 4.30 msg/sec | Total: 8699 messages
+2026-05-05 14:56:54  INFO      __main__  Rate: 5.37 msg/sec | Total: 8753 messages
+2026-05-05 14:57:04  INFO      __main__  Rate: 6.36 msg/sec | Total: 8817 messages
+2026-05-05 14:57:14  INFO      __main__  Rate: 5.60 msg/sec | Total: 8873 messages
+2026-05-05 14:57:24  INFO      __main__  Rate: 5.85 msg/sec | Total: 8932 messages
+2026-05-05 14:57:34  INFO      __main__  Rate: 5.44 msg/sec | Total: 8987 messages
+2026-05-05 14:57:44  INFO      __main__  Rate: 5.38 msg/sec | Total: 9041 messages
+2026-05-05 14:57:54  INFO      __main__  Rate: 5.80 msg/sec | Total: 9099 messages
+2026-05-05 14:58:04  INFO      __main__  Rate: 6.36 msg/sec | Total: 9163 messages
+2026-05-05 14:58:14  INFO      __main__  Rate: 6.00 msg/sec | Total: 9223 messages
+2026-05-05 14:58:24  INFO      __main__  Rate: 5.94 msg/sec | Total: 9283 messages
+2026-05-05 14:58:35  INFO      __main__  Rate: 7.04 msg/sec | Total: 9354 messages
+2026-05-05 14:58:45  INFO      __main__  Rate: 5.14 msg/sec | Total: 9406 messages
+2026-05-05 14:58:55  INFO      __main__  Rate: 5.61 msg/sec | Total: 9463 messages
+2026-05-05 14:59:05  INFO      __main__  Rate: 6.45 msg/sec | Total: 9528 messages
+2026-05-05 14:59:15  INFO      __main__  Rate: 5.93 msg/sec | Total: 9588 messages
+2026-05-05 14:59:25  INFO      __main__  Rate: 7.15 msg/sec | Total: 9660 messages
+2026-05-05 14:59:35  INFO      __main__  Rate: 5.96 msg/sec | Total: 9720 messages
+2026-05-05 14:59:45  INFO      __main__  Rate: 5.00 msg/sec | Total: 9770 messages
+2026-05-05 14:59:55  INFO      __main__  Rate: 4.68 msg/sec | Total: 9817 messages
+2026-05-05 15:00:05  INFO      __main__  Rate: 6.67 msg/sec | Total: 9885 messages
+2026-05-05 15:00:15  INFO      __main__  Rate: 7.76 msg/sec | Total: 9963 messages
+2026-05-05 15:00:26  INFO      __main__  Rate: 4.75 msg/sec | Total: 10011 messages
+2026-05-05 15:00:36  INFO      __main__  Rate: 5.25 msg/sec | Total: 10064 messages
+2026-05-05 15:00:46  INFO      __main__  Rate: 6.00 msg/sec | Total: 10125 messages
+2026-05-05 15:00:56  INFO      __main__  Rate: 6.98 msg/sec | Total: 10195 messages
+2026-05-05 15:01:06  INFO      __main__  Rate: 6.86 msg/sec | Total: 10264 messages
+2026-05-05 15:01:16  INFO      __main__  Rate: 6.67 msg/sec | Total: 10331 messages
+2026-05-05 15:01:26  INFO      __main__  Rate: 5.78 msg/sec | Total: 10389 messages
+2026-05-05 15:01:36  INFO      __main__  Rate: 7.69 msg/sec | Total: 10467 messages
+2026-05-05 15:01:46  INFO      __main__  Rate: 6.09 msg/sec | Total: 10528 messages
+2026-05-05 15:01:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:01:56  INFO      __main__  Rate: 5.56 msg/sec | Total: 10584 messages
+2026-05-05 15:02:06  INFO      __main__  Rate: 5.22 msg/sec | Total: 10637 messages
+2026-05-05 15:02:16  INFO      __main__  Rate: 6.22 msg/sec | Total: 10700 messages
+2026-05-05 15:02:26  INFO      __main__  Rate: 5.28 msg/sec | Total: 10753 messages
+2026-05-05 15:02:37  INFO      __main__  Rate: 5.82 msg/sec | Total: 10812 messages
+2026-05-05 15:02:47  INFO      __main__  Rate: 5.87 msg/sec | Total: 10871 messages
+2026-05-05 15:02:57  INFO      __main__  Rate: 5.50 msg/sec | Total: 10926 messages
+2026-05-05 15:03:07  INFO      __main__  Rate: 5.10 msg/sec | Total: 10978 messages
+2026-05-05 15:03:17  INFO      __main__  Rate: 5.08 msg/sec | Total: 11029 messages
+2026-05-05 15:03:27  INFO      __main__  Rate: 5.04 msg/sec | Total: 11080 messages
+2026-05-05 15:03:37  INFO      __main__  Rate: 5.78 msg/sec | Total: 11138 messages
+2026-05-05 15:03:47  INFO      __main__  Rate: 5.11 msg/sec | Total: 11190 messages
+2026-05-05 15:03:57  INFO      __main__  Rate: 6.16 msg/sec | Total: 11252 messages
+2026-05-05 15:04:07  INFO      __main__  Rate: 6.89 msg/sec | Total: 11321 messages
+2026-05-05 15:04:17  INFO      __main__  Rate: 5.58 msg/sec | Total: 11377 messages
+2026-05-05 15:04:27  INFO      __main__  Rate: 5.89 msg/sec | Total: 11436 messages
+2026-05-05 15:04:37  INFO      __main__  Rate: 4.88 msg/sec | Total: 11485 messages
+2026-05-05 15:04:47  INFO      __main__  Rate: 5.20 msg/sec | Total: 11537 messages
+2026-05-05 15:04:58  INFO      __main__  Rate: 4.81 msg/sec | Total: 11586 messages
+2026-05-05 15:05:08  INFO      __main__  Rate: 5.24 msg/sec | Total: 11639 messages
+2026-05-05 15:05:18  INFO      __main__  Rate: 4.10 msg/sec | Total: 11680 messages
+2026-05-05 15:05:28  INFO      __main__  Rate: 6.52 msg/sec | Total: 11746 messages
+2026-05-05 15:05:38  INFO      __main__  Rate: 6.48 msg/sec | Total: 11812 messages
+2026-05-05 15:05:48  INFO      __main__  Rate: 5.79 msg/sec | Total: 11870 messages
+2026-05-05 15:05:58  INFO      __main__  Rate: 5.09 msg/sec | Total: 11921 messages
+2026-05-05 15:06:08  INFO      __main__  Rate: 4.65 msg/sec | Total: 11968 messages
+2026-05-05 15:06:18  INFO      __main__  Rate: 4.89 msg/sec | Total: 12018 messages
+2026-05-05 15:06:29  INFO      __main__  Rate: 5.44 msg/sec | Total: 12073 messages
+2026-05-05 15:06:39  INFO      __main__  Rate: 5.01 msg/sec | Total: 12124 messages
+2026-05-05 15:06:49  INFO      __main__  Rate: 5.29 msg/sec | Total: 12177 messages
+2026-05-05 15:06:59  INFO      __main__  Rate: 5.93 msg/sec | Total: 12237 messages
+2026-05-05 15:07:09  INFO      __main__  Rate: 4.76 msg/sec | Total: 12285 messages
+2026-05-05 15:07:19  INFO      __main__  Rate: 5.59 msg/sec | Total: 12341 messages
+2026-05-05 15:07:29  INFO      __main__  Rate: 5.76 msg/sec | Total: 12399 messages
+2026-05-05 15:07:39  INFO      __main__  Rate: 4.60 msg/sec | Total: 12446 messages
+2026-05-05 15:07:49  INFO      __main__  Rate: 5.07 msg/sec | Total: 12497 messages
+2026-05-05 15:07:59  INFO      __main__  Rate: 5.30 msg/sec | Total: 12551 messages
+2026-05-05 15:08:10  INFO      __main__  Rate: 5.32 msg/sec | Total: 12605 messages
+2026-05-05 15:08:20  INFO      __main__  Rate: 5.71 msg/sec | Total: 12663 messages
+2026-05-05 15:08:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:08:30  INFO      __main__  Rate: 4.94 msg/sec | Total: 12713 messages
+2026-05-05 15:08:40  INFO      __main__  Rate: 6.00 msg/sec | Total: 12774 messages
+2026-05-05 15:08:50  INFO      __main__  Rate: 5.42 msg/sec | Total: 12829 messages
+2026-05-05 15:09:00  INFO      __main__  Rate: 4.95 msg/sec | Total: 12879 messages
+2026-05-05 15:09:10  INFO      __main__  Rate: 5.87 msg/sec | Total: 12938 messages
+2026-05-05 15:09:21  INFO      __main__  Rate: 5.40 msg/sec | Total: 12993 messages
+2026-05-05 15:09:31  INFO      __main__  Rate: 5.12 msg/sec | Total: 13045 messages
+2026-05-05 15:09:41  INFO      __main__  Rate: 5.37 msg/sec | Total: 13099 messages
+2026-05-05 15:09:51  INFO      __main__  Rate: 3.58 msg/sec | Total: 13135 messages
+2026-05-05 15:10:01  INFO      __main__  Rate: 7.36 msg/sec | Total: 13209 messages
+2026-05-05 15:10:11  INFO      __main__  Rate: 5.64 msg/sec | Total: 13266 messages
+2026-05-05 15:10:21  INFO      __main__  Rate: 5.46 msg/sec | Total: 13321 messages
+2026-05-05 15:10:31  INFO      __main__  Rate: 5.69 msg/sec | Total: 13378 messages
+2026-05-05 15:10:41  INFO      __main__  Rate: 5.35 msg/sec | Total: 13432 messages
+2026-05-05 15:10:51  INFO      __main__  Rate: 6.09 msg/sec | Total: 13493 messages
+2026-05-05 15:11:01  INFO      __main__  Rate: 4.90 msg/sec | Total: 13542 messages
+2026-05-05 15:11:11  INFO      __main__  Rate: 5.80 msg/sec | Total: 13601 messages
+2026-05-05 15:11:21  INFO      __main__  Rate: 5.39 msg/sec | Total: 13655 messages
+2026-05-05 15:11:31  INFO      __main__  Rate: 5.15 msg/sec | Total: 13707 messages
+2026-05-05 15:11:42  INFO      __main__  Rate: 5.14 msg/sec | Total: 13759 messages
+2026-05-05 15:11:52  INFO      __main__  Rate: 5.85 msg/sec | Total: 13818 messages
+2026-05-05 15:12:02  INFO      __main__  Rate: 4.92 msg/sec | Total: 13868 messages
+2026-05-05 15:12:12  INFO      __main__  Rate: 4.59 msg/sec | Total: 13914 messages
+2026-05-05 15:12:22  INFO      __main__  Rate: 6.00 msg/sec | Total: 13974 messages
+2026-05-05 15:12:32  INFO      __main__  Rate: 3.84 msg/sec | Total: 14013 messages
+2026-05-05 15:12:42  INFO      __main__  Rate: 5.50 msg/sec | Total: 14068 messages
+2026-05-05 15:12:52  INFO      __main__  Rate: 5.05 msg/sec | Total: 14119 messages
+2026-05-05 15:13:02  INFO      __main__  Rate: 5.56 msg/sec | Total: 14175 messages
+2026-05-05 15:13:12  INFO      __main__  Rate: 4.88 msg/sec | Total: 14224 messages
+2026-05-05 15:13:22  INFO      __main__  Rate: 4.99 msg/sec | Total: 14274 messages
+2026-05-05 15:13:32  INFO      __main__  Rate: 5.52 msg/sec | Total: 14330 messages
+2026-05-05 15:13:43  INFO      __main__  Rate: 5.81 msg/sec | Total: 14389 messages
+2026-05-05 15:13:53  INFO      __main__  Rate: 5.66 msg/sec | Total: 14446 messages
+2026-05-05 15:14:03  INFO      __main__  Rate: 5.24 msg/sec | Total: 14499 messages
+2026-05-05 15:14:13  INFO      __main__  Rate: 4.46 msg/sec | Total: 14544 messages
+2026-05-05 15:14:23  INFO      __main__  Rate: 3.99 msg/sec | Total: 14584 messages
+2026-05-05 15:14:33  INFO      __main__  Rate: 5.49 msg/sec | Total: 14639 messages
+2026-05-05 15:14:43  INFO      __main__  Rate: 5.82 msg/sec | Total: 14698 messages
+2026-05-05 15:14:53  INFO      __main__  Rate: 5.40 msg/sec | Total: 14753 messages
+2026-05-05 15:15:03  INFO      __main__  Rate: 5.16 msg/sec | Total: 14805 messages
+2026-05-05 15:15:13  INFO      __main__  Rate: 4.38 msg/sec | Total: 14849 messages
+2026-05-05 15:15:23  INFO      __main__  Rate: 5.21 msg/sec | Total: 14902 messages
+2026-05-05 15:15:34  INFO      __main__  Rate: 5.63 msg/sec | Total: 14959 messages
+2026-05-05 15:15:44  INFO      __main__  Rate: 5.28 msg/sec | Total: 15012 messages
+2026-05-05 15:15:54  INFO      __main__  Rate: 6.47 msg/sec | Total: 15077 messages
+2026-05-05 15:16:04  INFO      __main__  Rate: 5.98 msg/sec | Total: 15138 messages
+2026-05-05 15:16:14  INFO      __main__  Rate: 4.07 msg/sec | Total: 15179 messages
+2026-05-05 15:16:24  INFO      __main__  Rate: 6.64 msg/sec | Total: 15246 messages
+2026-05-05 15:16:34  INFO      __main__  Rate: 5.68 msg/sec | Total: 15303 messages
+2026-05-05 15:16:44  INFO      __main__  Rate: 4.69 msg/sec | Total: 15350 messages
+2026-05-05 15:16:54  INFO      __main__  Rate: 5.98 msg/sec | Total: 15410 messages
+2026-05-05 15:17:04  INFO      __main__  Rate: 6.05 msg/sec | Total: 15471 messages
+2026-05-05 15:17:14  INFO      __main__  Rate: 5.50 msg/sec | Total: 15526 messages
+2026-05-05 15:17:24  INFO      __main__  Rate: 5.25 msg/sec | Total: 15579 messages
+2026-05-05 15:17:34  INFO      __main__  Rate: 5.70 msg/sec | Total: 15636 messages
+2026-05-05 15:17:44  INFO      __main__  Rate: 5.75 msg/sec | Total: 15694 messages
+2026-05-05 15:17:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:17:54  INFO      __main__  Rate: 6.46 msg/sec | Total: 15759 messages
+2026-05-05 15:18:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:18:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:18:04  INFO      __main__  Rate: 7.59 msg/sec | Total: 15835 messages
+2026-05-05 15:18:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:18:14  INFO      __main__  Rate: 5.09 msg/sec | Total: 15886 messages
+2026-05-05 15:18:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:18:25  INFO      __main__  Rate: 4.65 msg/sec | Total: 15933 messages
+2026-05-05 15:18:35  INFO      __main__  Rate: 5.15 msg/sec | Total: 15985 messages
+2026-05-05 15:18:45  INFO      __main__  Rate: 4.66 msg/sec | Total: 16032 messages
+2026-05-05 15:18:55  INFO      __main__  Rate: 5.64 msg/sec | Total: 16089 messages
+2026-05-05 15:19:05  INFO      __main__  Rate: 6.16 msg/sec | Total: 16151 messages
+2026-05-05 15:19:15  INFO      __main__  Rate: 6.27 msg/sec | Total: 16214 messages
+2026-05-05 15:19:25  INFO      __main__  Rate: 5.25 msg/sec | Total: 16267 messages
+2026-05-05 15:19:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:19:35  INFO      __main__  Rate: 5.15 msg/sec | Total: 16319 messages
+2026-05-05 15:19:45  INFO      __main__  Rate: 4.79 msg/sec | Total: 16367 messages
+2026-05-05 15:19:55  INFO      __main__  Rate: 6.28 msg/sec | Total: 16430 messages
+2026-05-05 15:20:05  INFO      __main__  Rate: 4.86 msg/sec | Total: 16479 messages
+2026-05-05 15:20:15  INFO      __main__  Rate: 5.17 msg/sec | Total: 16531 messages
+2026-05-05 15:20:25  INFO      __main__  Rate: 6.19 msg/sec | Total: 16593 messages
+2026-05-05 15:20:26  INFO      __main__  Skipping POSIX signal handlers (not running on main thread, e.g. Streamlit)
+2026-05-05 15:20:26  INFO      __main__  ============================================================
+2026-05-05 15:20:26  INFO      __main__  HiveMQ Service Starting (broker_name=HiveMQ-Cloud)
+2026-05-05 15:20:26  INFO      __main__  ============================================================
+2026-05-05 15:20:26  INFO      database  Database initialised at mqtt_data.db
+2026-05-05 15:20:26  INFO      __main__  Database initialised (shared schema) at mqtt_data.db
+2026-05-05 15:20:26  INFO      __main__  Database worker thread started
+2026-05-05 15:20:26  INFO      __main__  TLS enabled for secure connection
+2026-05-05 15:20:26  INFO      __main__  Connecting to broker HiveMQ-Cloud at b9ff4eeb544e4ac18142a019bc399b43.s2.eu.hivemq.cloud:8883
+2026-05-05 15:20:27  INFO      __main__  Starting MQTT loop...
+2026-05-05 15:20:27  INFO      __main__  Connected successfully to broker (HiveMQ-Cloud)
+2026-05-05 15:20:27  INFO      __main__  Subscribed to topic: #
+2026-05-05 15:20:27  INFO      __main__  Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-05 15:21:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:21:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:23:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:05  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:10  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:24:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:46  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:26:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:27:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:28:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:28:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:28:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:29:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:02  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:19  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:30:46  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:33:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:33:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:33:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:33:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:35:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:36:46  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:35  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:41:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:44:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:44:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:45:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:46:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:46:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:46:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:46:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:47:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:47:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:47:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:47:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:48:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:48:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:50:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:50:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:50:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:50:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:55:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:56:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:57:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:57:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 15:57:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:00:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:01:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:19  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:04:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:16  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:05:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:06:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:06:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:07:02  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:07:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:08:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:10:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:11:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:12:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:12:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:12:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:13:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:14:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:25:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:25:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:26:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:27:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:27:51  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:27:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:27:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:05  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:09  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:28:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:29:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:29:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:29:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:29:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:31:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:34:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:02  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:08  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:10  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:35:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:36:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:36:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:38:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:38:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:38:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:38:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:05  INFO      database  Created default admin account (admin/admin123)
+2026-05-05 16:46:05  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:16  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:35  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:46:36  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:48:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:48:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:48:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:48:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:48:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:49:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:49:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:49:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:49:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:49:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:50:19  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:50:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:50:51  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:02  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:10  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:51  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:51:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:52:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:52:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:52:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:52:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:52:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:53:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:53:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:54:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:54:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:54:16  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:54:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:58:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:58:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:59:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 16:59:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:14:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:14:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:35  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:19:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:20:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:20:05  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:20:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:25:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:25:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:25:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:25:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:25:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:26:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:26:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:26:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:26:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:26:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:28:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:28:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:28:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:28:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:28:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:30:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:30:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:31:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:35  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:32:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 17:34:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:16:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:16:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:09  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:19:46  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:21:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:33  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:23:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:24:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:24:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:24:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:24:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:24:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:29:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:29:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:31:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:31:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:41:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:08  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:08  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:42:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:19  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:43:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:10  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:38  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:44:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:45:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:45:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:45:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:45:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:46:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:47:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:47:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:47:55  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:51  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:48:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:49:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:49:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:49:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:49:47  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:50:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:50:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:50:32  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:51:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:52:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:16  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:46  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:53:56  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:00  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:15  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:19  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:54:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:02  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:08  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:49  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:55:54  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:56:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:56:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:56:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:56:50  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:01  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:05  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:17  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:20  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:24  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:25  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:29  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:57:30  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:59:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:59:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:59:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:59:11  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 18:59:12  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:04:35  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:04:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:04:42  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:09  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:10  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:13  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:14  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:23  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:39  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:40  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:41  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:58  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:05:59  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:06:44  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:06:52  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:06:53  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:27  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:28  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:31  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:47  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:47  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:07:57  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:03  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:04  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:21  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:22  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:08:26  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:06  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:07  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:18  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:34  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:36  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:37  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:43  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:45  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:47  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
+2026-05-05 19:11:48  INFO      database  Database initialised at C:\Users\Tanishka.Jain\Documents\server_loggger\server\mqtt_data.db
