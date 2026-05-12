@@ -2389,3 +2389,877 @@
 2026-05-05 19:18:34,830 - __main__ - INFO - Rate: 5.38 msg/sec | Total: 5731 messages
 2026-05-05 19:18:37,313 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 425 messages
 2026-05-05 19:18:38,123 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 425 messages
+2026-05-12 15:40:54,478 - __main__ - INFO - Skipping POSIX signal handlers (not running on main thread, e.g. Streamlit)
+2026-05-12 15:40:54,478 - __main__ - INFO - Skipping POSIX signal handlers (not running on main thread, e.g. Streamlit)
+2026-05-12 15:40:54,479 - __main__ - INFO - ============================================================
+2026-05-12 15:40:54,480 - __main__ - INFO - ============================================================
+2026-05-12 15:40:54,480 - __main__ - INFO - HiveMQ Service Starting (Dual-Broker mode)
+2026-05-12 15:40:54,480 - __main__ - INFO - HiveMQ Service Starting (Dual-Broker mode)
+2026-05-12 15:40:54,480 - __main__ - INFO - ============================================================
+2026-05-12 15:40:54,480 - __main__ - INFO - ============================================================
+2026-05-12 15:40:54,508 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:54,509 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:54,509 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:54,509 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:54,829 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:54,832 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:54,925 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:54,925 - __main__ - INFO - Connecting to broker Broker-2 at newflo-789c1e1b.a03.euc1.aws.hivemq.cloud:8883
+2026-05-12 15:40:54,933 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:54,934 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:55,024 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:55,028 - __main__ - INFO - Connecting to broker Broker-1 at b9ff4eeb544e4ac18142a019bc399b43.s2.eu.hivemq.cloud:8883
+2026-05-12 15:40:55,037 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:55,056 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:55,058 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:55,059 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:55,210 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:55,211 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:55,212 - __main__ - INFO - Connecting to broker Broker-1 at b9ff4eeb544e4ac18142a019bc399b43.s2.eu.hivemq.cloud:8883
+2026-05-12 15:40:55,212 - __main__ - INFO - Connecting to broker Broker-2 at newflo-789c1e1b.a03.euc1.aws.hivemq.cloud:8883
+2026-05-12 15:40:55,643 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:55,654 - __main__ - INFO - Skipping POSIX signal handlers (not running on main thread, e.g. Streamlit)
+2026-05-12 15:40:55,654 - __main__ - INFO - ============================================================
+2026-05-12 15:40:55,655 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:55,655 - __main__ - INFO - HiveMQ Service Starting (Dual-Broker mode)
+2026-05-12 15:40:55,656 - __main__ - INFO - ============================================================
+2026-05-12 15:40:55,670 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:55,671 - database - INFO - Database initialised at mqtt_data.db
+2026-05-12 15:40:55,761 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:55,787 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:55,814 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:55,815 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:55,870 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:55,871 - __main__ - INFO - Connecting to broker Broker-2 at newflo-789c1e1b.a03.euc1.aws.hivemq.cloud:8883
+2026-05-12 15:40:55,877 - __main__ - INFO - Database initialised (shared schema) at mqtt_data.db
+2026-05-12 15:40:55,879 - __main__ - INFO - Database worker thread started
+2026-05-12 15:40:55,938 - __main__ - INFO - TLS enabled for secure connection
+2026-05-12 15:40:55,939 - __main__ - INFO - Connecting to broker Broker-1 at b9ff4eeb544e4ac18142a019bc399b43.s2.eu.hivemq.cloud:8883
+2026-05-12 15:40:55,984 - __main__ - INFO - Connected successfully to broker (Broker-1)
+2026-05-12 15:40:55,985 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:55,985 - __main__ - INFO - Connected successfully to broker (Broker-1)
+2026-05-12 15:40:55,985 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:56,114 - __main__ - INFO - Connected successfully to broker (Broker-2)
+2026-05-12 15:40:56,114 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:56,131 - __main__ - INFO - Connected successfully to broker (Broker-2)
+2026-05-12 15:40:56,131 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:56,185 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:56,221 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:56,328 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:56,331 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:56,352 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:56,608 - __main__ - INFO - Starting MQTT loop...
+2026-05-12 15:40:56,797 - __main__ - ERROR - Error starting service: HiveMQService.on_disconnect() takes from 4 to 5 positional arguments but 6 were given
+2026-05-12 15:40:56,797 - __main__ - INFO - Connected successfully to broker (Broker-2)
+2026-05-12 15:40:56,798 - __main__ - INFO - Stopping HiveMQ service...
+2026-05-12 15:40:56,798 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:56,799 - __main__ - INFO - MQTT client stopped successfully
+2026-05-12 15:40:56,800 - __main__ - INFO - Waiting for database worker to finish...
+2026-05-12 15:40:56,812 - __main__ - ERROR - Error starting service: HiveMQService.on_disconnect() takes from 4 to 5 positional arguments but 6 were given
+2026-05-12 15:40:56,812 - __main__ - INFO - Stopping HiveMQ service...
+2026-05-12 15:40:56,812 - __main__ - INFO - MQTT client stopped successfully
+2026-05-12 15:40:56,813 - __main__ - INFO - Waiting for database worker to finish...
+2026-05-12 15:40:56,823 - __main__ - INFO - Database worker stopped. Total messages stored: 1
+2026-05-12 15:40:56,824 - __main__ - INFO - HiveMQ service stopped
+2026-05-12 15:40:56,825 - __main__ - ERROR - Fatal error for Broker-2: HiveMQService.on_disconnect() takes from 4 to 5 positional arguments but 6 were given
+2026-05-12 15:40:56,855 - __main__ - INFO - Connected successfully to broker (Broker-1)
+2026-05-12 15:40:56,856 - __main__ - INFO - Subscribed to topic: #
+2026-05-12 15:40:57,009 - __main__ - INFO - Database worker stopped. Total messages stored: 1
+2026-05-12 15:40:57,010 - __main__ - INFO - HiveMQ service stopped
+2026-05-12 15:40:57,010 - __main__ - ERROR - Fatal error for Broker-1: HiveMQService.on_disconnect() takes from 4 to 5 positional arguments but 6 were given
+2026-05-12 15:40:57,013 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:57,081 - __main__ - INFO - Subscription confirmed with QoS: [ReasonCode(Suback, 'Granted QoS 1')]
+2026-05-12 15:40:57,222 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-05-12 15:41:04,485 - __main__ - INFO - Rate: 4.50 msg/sec | Total: 45 messages
+2026-05-12 15:41:04,529 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 6 messages
+2026-05-12 15:41:05,680 - __main__ - INFO - Rate: 4.89 msg/sec | Total: 49 messages
+2026-05-12 15:41:05,796 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 6 messages
+2026-05-12 15:41:14,546 - __main__ - INFO - Rate: 4.77 msg/sec | Total: 93 messages
+2026-05-12 15:41:14,630 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 13 messages
+2026-05-12 15:41:15,745 - __main__ - INFO - Rate: 4.97 msg/sec | Total: 99 messages
+2026-05-12 15:41:15,930 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 13 messages
+2026-05-12 15:41:24,574 - __main__ - INFO - Rate: 6.08 msg/sec | Total: 154 messages
+2026-05-12 15:41:24,682 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 23 messages
+2026-05-12 15:41:25,815 - __main__ - INFO - Rate: 5.66 msg/sec | Total: 156 messages
+2026-05-12 15:41:25,932 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 22 messages
+2026-05-12 15:41:34,671 - __main__ - INFO - Rate: 4.85 msg/sec | Total: 203 messages
+2026-05-12 15:41:34,883 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 33 messages
+2026-05-12 15:41:35,974 - __main__ - INFO - Rate: 4.82 msg/sec | Total: 205 messages
+2026-05-12 15:41:36,021 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 33 messages
+2026-05-12 15:41:44,874 - __main__ - INFO - Rate: 4.51 msg/sec | Total: 249 messages
+2026-05-12 15:41:44,906 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 41 messages
+2026-05-12 15:41:46,132 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 40 messages
+2026-05-12 15:41:46,148 - __main__ - INFO - Rate: 4.42 msg/sec | Total: 250 messages
+2026-05-12 15:41:54,913 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 51 messages
+2026-05-12 15:41:54,963 - __main__ - INFO - Rate: 6.05 msg/sec | Total: 310 messages
+2026-05-12 15:41:56,168 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 52 messages
+2026-05-12 15:41:56,175 - __main__ - INFO - Rate: 6.58 msg/sec | Total: 316 messages
+2026-05-12 15:42:04,923 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 60 messages
+2026-05-12 15:42:05,146 - __main__ - INFO - Rate: 7.17 msg/sec | Total: 383 messages
+2026-05-12 15:42:06,188 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 60 messages
+2026-05-12 15:42:06,280 - __main__ - INFO - Rate: 6.93 msg/sec | Total: 386 messages
+2026-05-12 15:42:15,076 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 69 messages
+2026-05-12 15:42:15,167 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 447 messages
+2026-05-12 15:42:16,321 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 69 messages
+2026-05-12 15:42:16,410 - __main__ - INFO - Rate: 6.42 msg/sec | Total: 451 messages
+2026-05-12 15:42:25,113 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 79 messages
+2026-05-12 15:42:25,180 - __main__ - INFO - Rate: 5.99 msg/sec | Total: 507 messages
+2026-05-12 15:42:26,346 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 79 messages
+2026-05-12 15:42:26,491 - __main__ - INFO - Rate: 5.95 msg/sec | Total: 511 messages
+2026-05-12 15:42:35,172 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 89 messages
+2026-05-12 15:42:35,188 - __main__ - INFO - Rate: 5.40 msg/sec | Total: 561 messages
+2026-05-12 15:42:36,415 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 88 messages
+2026-05-12 15:42:36,665 - __main__ - INFO - Rate: 5.60 msg/sec | Total: 568 messages
+2026-05-12 15:42:45,202 - __main__ - INFO - Rate: 5.29 msg/sec | Total: 614 messages
+2026-05-12 15:42:45,248 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 96 messages
+2026-05-12 15:42:46,585 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 96 messages
+2026-05-12 15:42:46,800 - __main__ - INFO - Rate: 4.93 msg/sec | Total: 618 messages
+2026-05-12 15:42:55,351 - __main__ - INFO - Rate: 5.81 msg/sec | Total: 673 messages
+2026-05-12 15:42:55,420 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 101 messages
+2026-05-12 15:42:56,656 - __main__ - INFO - Rate: 0.40 msg/sec | Total: 100 messages
+2026-05-12 15:42:56,855 - __main__ - INFO - Rate: 5.57 msg/sec | Total: 674 messages
+2026-05-12 15:43:05,395 - __main__ - INFO - Rate: 5.48 msg/sec | Total: 728 messages
+2026-05-12 15:43:05,588 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 106 messages
+2026-05-12 15:43:06,855 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 106 messages
+2026-05-12 15:43:06,999 - __main__ - INFO - Rate: 5.62 msg/sec | Total: 731 messages
+2026-05-12 15:43:15,410 - __main__ - INFO - Rate: 5.39 msg/sec | Total: 782 messages
+2026-05-12 15:43:15,698 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 114 messages
+2026-05-12 15:43:16,942 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 113 messages
+2026-05-12 15:43:17,128 - __main__ - INFO - Rate: 5.73 msg/sec | Total: 789 messages
+2026-05-12 15:43:25,460 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 846 messages
+2026-05-12 15:43:25,828 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 121 messages
+2026-05-12 15:43:27,065 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 121 messages
+2026-05-12 15:43:27,136 - __main__ - INFO - Rate: 6.10 msg/sec | Total: 850 messages
+2026-05-12 15:43:35,491 - __main__ - INFO - Rate: 5.78 msg/sec | Total: 904 messages
+2026-05-12 15:43:35,973 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 132 messages
+2026-05-12 15:43:37,229 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 131 messages
+2026-05-12 15:43:37,261 - __main__ - INFO - Rate: 6.02 msg/sec | Total: 911 messages
+2026-05-12 15:43:45,597 - __main__ - INFO - Rate: 6.63 msg/sec | Total: 971 messages
+2026-05-12 15:43:46,004 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 138 messages
+2026-05-12 15:43:47,247 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 137 messages
+2026-05-12 15:43:47,402 - __main__ - INFO - Rate: 6.71 msg/sec | Total: 979 messages
+2026-05-12 15:43:55,620 - __main__ - INFO - Rate: 6.19 msg/sec | Total: 1033 messages
+2026-05-12 15:43:56,072 - __main__ - INFO - Rate: 1.79 msg/sec | Total: 156 messages
+2026-05-12 15:43:57,296 - __main__ - INFO - Rate: 1.79 msg/sec | Total: 155 messages
+2026-05-12 15:43:57,532 - __main__ - INFO - Rate: 5.92 msg/sec | Total: 1039 messages
+2026-05-12 15:44:05,717 - __main__ - INFO - Rate: 5.05 msg/sec | Total: 1084 messages
+2026-05-12 15:44:06,168 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 163 messages
+2026-05-12 15:44:07,302 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 164 messages
+2026-05-12 15:44:07,723 - __main__ - INFO - Rate: 4.91 msg/sec | Total: 1089 messages
+2026-05-12 15:44:15,863 - __main__ - INFO - Rate: 4.53 msg/sec | Total: 1130 messages
+2026-05-12 15:44:16,338 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 170 messages
+2026-05-12 15:44:17,373 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 169 messages
+2026-05-12 15:44:17,784 - __main__ - INFO - Rate: 5.07 msg/sec | Total: 1140 messages
+2026-05-12 15:44:26,058 - __main__ - INFO - Rate: 6.38 msg/sec | Total: 1195 messages
+2026-05-12 15:44:26,491 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 181 messages
+2026-05-12 15:44:27,404 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 181 messages
+2026-05-12 15:44:27,844 - __main__ - INFO - Rate: 6.36 msg/sec | Total: 1204 messages
+2026-05-12 15:44:36,088 - __main__ - INFO - Rate: 6.28 msg/sec | Total: 1258 messages
+2026-05-12 15:44:36,667 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 190 messages
+2026-05-12 15:44:37,453 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 190 messages
+2026-05-12 15:44:37,895 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 1268 messages
+2026-05-12 15:44:46,259 - __main__ - INFO - Rate: 5.51 msg/sec | Total: 1314 messages
+2026-05-12 15:44:46,737 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 205 messages
+2026-05-12 15:44:47,578 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 204 messages
+2026-05-12 15:44:47,969 - __main__ - INFO - Rate: 5.56 msg/sec | Total: 1324 messages
+2026-05-12 15:44:56,268 - __main__ - INFO - Rate: 6.49 msg/sec | Total: 1379 messages
+2026-05-12 15:44:56,741 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 210 messages
+2026-05-12 15:44:57,699 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 210 messages
+2026-05-12 15:44:58,009 - __main__ - INFO - Rate: 6.47 msg/sec | Total: 1389 messages
+2026-05-12 15:45:06,375 - __main__ - INFO - Rate: 6.13 msg/sec | Total: 1441 messages
+2026-05-12 15:45:06,751 - __main__ - INFO - Rate: 1.30 msg/sec | Total: 223 messages
+2026-05-12 15:45:07,719 - __main__ - INFO - Rate: 1.30 msg/sec | Total: 223 messages
+2026-05-12 15:45:08,112 - __main__ - INFO - Rate: 6.14 msg/sec | Total: 1451 messages
+2026-05-12 15:45:16,537 - __main__ - INFO - Rate: 5.41 msg/sec | Total: 1496 messages
+2026-05-12 15:45:16,799 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 231 messages
+2026-05-12 15:45:17,755 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 233 messages
+2026-05-12 15:45:18,244 - __main__ - INFO - Rate: 5.63 msg/sec | Total: 1508 messages
+2026-05-12 15:45:26,657 - __main__ - INFO - Rate: 7.11 msg/sec | Total: 1568 messages
+2026-05-12 15:45:27,000 - __main__ - INFO - Rate: 1.27 msg/sec | Total: 244 messages
+2026-05-12 15:45:27,774 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 244 messages
+2026-05-12 15:45:28,402 - __main__ - INFO - Rate: 7.19 msg/sec | Total: 1581 messages
+2026-05-12 15:45:36,840 - __main__ - INFO - Rate: 6.09 msg/sec | Total: 1630 messages
+2026-05-12 15:45:37,192 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 255 messages
+2026-05-12 15:45:37,807 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 255 messages
+2026-05-12 15:45:38,440 - __main__ - INFO - Rate: 5.18 msg/sec | Total: 1633 messages
+2026-05-12 15:45:46,868 - __main__ - INFO - Rate: 6.38 msg/sec | Total: 1694 messages
+2026-05-12 15:45:47,362 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 266 messages
+2026-05-12 15:45:47,977 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 265 messages
+2026-05-12 15:45:48,580 - __main__ - INFO - Rate: 7.10 msg/sec | Total: 1705 messages
+2026-05-12 15:45:56,880 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 1758 messages
+2026-05-12 15:45:57,379 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 276 messages
+2026-05-12 15:45:58,079 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 277 messages
+2026-05-12 15:45:58,595 - __main__ - INFO - Rate: 6.59 msg/sec | Total: 1771 messages
+2026-05-12 15:46:07,049 - __main__ - INFO - Rate: 6.79 msg/sec | Total: 1827 messages
+2026-05-12 15:46:07,431 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 290 messages
+2026-05-12 15:46:08,254 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 290 messages
+2026-05-12 15:46:08,789 - __main__ - INFO - Rate: 5.79 msg/sec | Total: 1830 messages
+2026-05-12 15:46:17,216 - __main__ - INFO - Rate: 5.11 msg/sec | Total: 1879 messages
+2026-05-12 15:46:17,638 - __main__ - INFO - Rate: 1.37 msg/sec | Total: 304 messages
+2026-05-12 15:46:18,311 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 305 messages
+2026-05-12 15:46:18,899 - __main__ - INFO - Rate: 5.74 msg/sec | Total: 1888 messages
+2026-05-12 15:46:27,314 - __main__ - INFO - Rate: 6.83 msg/sec | Total: 1948 messages
+2026-05-12 15:46:27,699 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 313 messages
+2026-05-12 15:46:28,502 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 312 messages
+2026-05-12 15:46:28,900 - __main__ - INFO - Rate: 6.70 msg/sec | Total: 1955 messages
+2026-05-12 15:46:37,368 - __main__ - INFO - Rate: 6.66 msg/sec | Total: 2015 messages
+2026-05-12 15:46:37,786 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 327 messages
+2026-05-12 15:46:38,543 - __main__ - INFO - Rate: 1.69 msg/sec | Total: 329 messages
+2026-05-12 15:46:38,925 - __main__ - INFO - Rate: 6.68 msg/sec | Total: 2022 messages
+2026-05-12 15:46:47,434 - __main__ - INFO - Rate: 7.55 msg/sec | Total: 2091 messages
+2026-05-12 15:46:47,937 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 342 messages
+2026-05-12 15:46:48,655 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 343 messages
+2026-05-12 15:46:48,957 - __main__ - INFO - Rate: 7.58 msg/sec | Total: 2098 messages
+2026-05-12 15:46:57,486 - __main__ - INFO - Rate: 5.37 msg/sec | Total: 2145 messages
+2026-05-12 15:46:58,107 - __main__ - INFO - Rate: 1.77 msg/sec | Total: 360 messages
+2026-05-12 15:46:58,758 - __main__ - INFO - Rate: 1.58 msg/sec | Total: 359 messages
+2026-05-12 15:46:59,037 - __main__ - INFO - Rate: 5.46 msg/sec | Total: 2153 messages
+2026-05-12 15:47:07,570 - __main__ - INFO - Rate: 7.24 msg/sec | Total: 2218 messages
+2026-05-12 15:47:08,147 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 368 messages
+2026-05-12 15:47:08,774 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 367 messages
+2026-05-12 15:47:09,076 - __main__ - INFO - Rate: 6.87 msg/sec | Total: 2222 messages
+2026-05-12 15:47:17,663 - __main__ - INFO - Rate: 6.44 msg/sec | Total: 2283 messages
+2026-05-12 15:47:18,189 - __main__ - INFO - Rate: 1.29 msg/sec | Total: 381 messages
+2026-05-12 15:47:18,905 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 381 messages
+2026-05-12 15:47:19,107 - __main__ - INFO - Rate: 6.48 msg/sec | Total: 2287 messages
+2026-05-12 15:47:27,668 - __main__ - INFO - Rate: 5.10 msg/sec | Total: 2334 messages
+2026-05-12 15:47:28,335 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 390 messages
+2026-05-12 15:47:28,946 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 389 messages
+2026-05-12 15:47:29,124 - __main__ - INFO - Rate: 5.59 msg/sec | Total: 2343 messages
+2026-05-12 15:47:37,676 - __main__ - INFO - Rate: 5.60 msg/sec | Total: 2390 messages
+2026-05-12 15:47:38,418 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 401 messages
+2026-05-12 15:47:39,005 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 401 messages
+2026-05-12 15:47:39,290 - __main__ - INFO - Rate: 5.90 msg/sec | Total: 2403 messages
+2026-05-12 15:47:47,844 - __main__ - INFO - Rate: 6.20 msg/sec | Total: 2453 messages
+2026-05-12 15:47:48,459 - __main__ - INFO - Rate: 1.69 msg/sec | Total: 418 messages
+2026-05-12 15:47:49,207 - __main__ - INFO - Rate: 1.67 msg/sec | Total: 418 messages
+2026-05-12 15:47:49,333 - __main__ - INFO - Rate: 5.68 msg/sec | Total: 2460 messages
+2026-05-12 15:47:57,978 - __main__ - INFO - Rate: 5.72 msg/sec | Total: 2511 messages
+2026-05-12 15:47:58,476 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 427 messages
+2026-05-12 15:47:59,208 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 427 messages
+2026-05-12 15:47:59,385 - __main__ - INFO - Rate: 5.47 msg/sec | Total: 2515 messages
+2026-05-12 15:48:07,986 - __main__ - INFO - Rate: 5.90 msg/sec | Total: 2570 messages
+2026-05-12 15:48:08,607 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 435 messages
+2026-05-12 15:48:09,379 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 434 messages
+2026-05-12 15:48:09,395 - __main__ - INFO - Rate: 6.19 msg/sec | Total: 2577 messages
+2026-05-12 15:48:18,035 - __main__ - INFO - Rate: 6.47 msg/sec | Total: 2635 messages
+2026-05-12 15:48:18,707 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 450 messages
+2026-05-12 15:48:19,542 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 449 messages
+2026-05-12 15:48:19,572 - __main__ - INFO - Rate: 6.29 msg/sec | Total: 2641 messages
+2026-05-12 15:48:28,047 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 2694 messages
+2026-05-12 15:48:28,904 - __main__ - INFO - Rate: 1.37 msg/sec | Total: 464 messages
+2026-05-12 15:48:29,679 - __main__ - INFO - Rate: 5.84 msg/sec | Total: 2700 messages
+2026-05-12 15:48:29,723 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 463 messages
+2026-05-12 15:48:38,126 - __main__ - INFO - Rate: 6.45 msg/sec | Total: 2759 messages
+2026-05-12 15:48:38,990 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 476 messages
+2026-05-12 15:48:39,809 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 475 messages
+2026-05-12 15:48:39,812 - __main__ - INFO - Rate: 6.51 msg/sec | Total: 2766 messages
+2026-05-12 15:48:48,210 - __main__ - INFO - Rate: 5.55 msg/sec | Total: 2815 messages
+2026-05-12 15:48:49,152 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 483 messages
+2026-05-12 15:48:49,835 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 2825 messages
+2026-05-12 15:48:49,981 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 482 messages
+2026-05-12 15:48:58,223 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 2879 messages
+2026-05-12 15:48:59,282 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 493 messages
+2026-05-12 15:48:59,903 - __main__ - INFO - Rate: 7.25 msg/sec | Total: 2898 messages
+2026-05-12 15:49:00,082 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 492 messages
+2026-05-12 15:49:08,332 - __main__ - INFO - Rate: 6.33 msg/sec | Total: 2943 messages
+2026-05-12 15:49:09,305 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 504 messages
+2026-05-12 15:49:10,058 - __main__ - INFO - Rate: 4.83 msg/sec | Total: 2947 messages
+2026-05-12 15:49:10,214 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 504 messages
+2026-05-12 15:49:18,358 - __main__ - INFO - Rate: 6.48 msg/sec | Total: 3008 messages
+2026-05-12 15:49:19,358 - __main__ - INFO - Rate: 1.59 msg/sec | Total: 520 messages
+2026-05-12 15:49:20,102 - __main__ - INFO - Rate: 7.27 msg/sec | Total: 3020 messages
+2026-05-12 15:49:20,378 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 519 messages
+2026-05-12 15:49:28,435 - __main__ - INFO - Rate: 7.24 msg/sec | Total: 3081 messages
+2026-05-12 15:49:29,552 - __main__ - INFO - Rate: 0.78 msg/sec | Total: 528 messages
+2026-05-12 15:49:30,152 - __main__ - INFO - Rate: 6.87 msg/sec | Total: 3089 messages
+2026-05-12 15:49:30,495 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 528 messages
+2026-05-12 15:49:38,480 - __main__ - INFO - Rate: 6.47 msg/sec | Total: 3146 messages
+2026-05-12 15:49:39,639 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 543 messages
+2026-05-12 15:49:40,178 - __main__ - INFO - Rate: 6.88 msg/sec | Total: 3158 messages
+2026-05-12 15:49:40,655 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 542 messages
+2026-05-12 15:49:48,514 - __main__ - INFO - Rate: 7.47 msg/sec | Total: 3221 messages
+2026-05-12 15:49:49,725 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 558 messages
+2026-05-12 15:49:50,349 - __main__ - INFO - Rate: 7.18 msg/sec | Total: 3231 messages
+2026-05-12 15:49:50,764 - __main__ - INFO - Rate: 1.78 msg/sec | Total: 560 messages
+2026-05-12 15:49:58,692 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 3286 messages
+2026-05-12 15:49:59,901 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 572 messages
+2026-05-12 15:50:00,447 - __main__ - INFO - Rate: 7.03 msg/sec | Total: 3302 messages
+2026-05-12 15:50:00,898 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 572 messages
+2026-05-12 15:50:08,702 - __main__ - INFO - Rate: 7.19 msg/sec | Total: 3358 messages
+2026-05-12 15:50:09,982 - __main__ - INFO - Rate: 1.69 msg/sec | Total: 589 messages
+2026-05-12 15:50:10,594 - __main__ - INFO - Rate: 6.41 msg/sec | Total: 3367 messages
+2026-05-12 15:50:10,933 - __main__ - INFO - Rate: 1.99 msg/sec | Total: 592 messages
+2026-05-12 15:50:18,731 - __main__ - INFO - Rate: 5.78 msg/sec | Total: 3416 messages
+2026-05-12 15:50:20,131 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 599 messages
+2026-05-12 15:50:20,613 - __main__ - INFO - Rate: 6.29 msg/sec | Total: 3430 messages
+2026-05-12 15:50:20,972 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 598 messages
+2026-05-12 15:50:28,781 - __main__ - INFO - Rate: 6.57 msg/sec | Total: 3482 messages
+2026-05-12 15:50:30,138 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 609 messages
+2026-05-12 15:50:30,686 - __main__ - INFO - Rate: 6.45 msg/sec | Total: 3495 messages
+2026-05-12 15:50:31,103 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 610 messages
+2026-05-12 15:50:38,953 - __main__ - INFO - Rate: 7.18 msg/sec | Total: 3555 messages
+2026-05-12 15:50:40,335 - __main__ - INFO - Rate: 1.37 msg/sec | Total: 623 messages
+2026-05-12 15:50:40,759 - __main__ - INFO - Rate: 6.55 msg/sec | Total: 3561 messages
+2026-05-12 15:50:41,173 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 622 messages
+2026-05-12 15:50:49,134 - __main__ - INFO - Rate: 6.09 msg/sec | Total: 3617 messages
+2026-05-12 15:50:50,496 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 635 messages
+2026-05-12 15:50:50,809 - __main__ - INFO - Rate: 6.67 msg/sec | Total: 3628 messages
+2026-05-12 15:50:51,344 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 635 messages
+2026-05-12 15:50:59,204 - __main__ - INFO - Rate: 5.86 msg/sec | Total: 3676 messages
+2026-05-12 15:51:00,636 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 647 messages
+2026-05-12 15:51:00,969 - __main__ - INFO - Rate: 5.41 msg/sec | Total: 3683 messages
+2026-05-12 15:51:01,487 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 647 messages
+2026-05-12 15:51:09,319 - __main__ - INFO - Rate: 5.24 msg/sec | Total: 3729 messages
+2026-05-12 15:51:10,762 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 656 messages
+2026-05-12 15:51:11,105 - __main__ - INFO - Rate: 5.23 msg/sec | Total: 3736 messages
+2026-05-12 15:51:11,637 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 656 messages
+2026-05-12 15:51:19,495 - __main__ - INFO - Rate: 4.82 msg/sec | Total: 3778 messages
+2026-05-12 15:51:20,966 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 662 messages
+2026-05-12 15:51:21,286 - __main__ - INFO - Rate: 5.01 msg/sec | Total: 3787 messages
+2026-05-12 15:51:21,791 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 662 messages
+2026-05-12 15:51:29,525 - __main__ - INFO - Rate: 5.88 msg/sec | Total: 3837 messages
+2026-05-12 15:51:31,073 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 674 messages
+2026-05-12 15:51:31,314 - __main__ - INFO - Rate: 5.78 msg/sec | Total: 3845 messages
+2026-05-12 15:51:31,812 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 674 messages
+2026-05-12 15:51:39,585 - __main__ - INFO - Rate: 5.57 msg/sec | Total: 3893 messages
+2026-05-12 15:51:41,233 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 684 messages
+2026-05-12 15:51:41,402 - __main__ - INFO - Rate: 5.55 msg/sec | Total: 3901 messages
+2026-05-12 15:51:41,969 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 684 messages
+2026-05-12 15:51:49,587 - __main__ - INFO - Rate: 5.20 msg/sec | Total: 3945 messages
+2026-05-12 15:51:51,285 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 699 messages
+2026-05-12 15:51:51,423 - __main__ - INFO - Rate: 5.69 msg/sec | Total: 3958 messages
+2026-05-12 15:51:52,106 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 698 messages
+2026-05-12 15:51:59,765 - __main__ - INFO - Rate: 7.47 msg/sec | Total: 4021 messages
+2026-05-12 15:52:01,403 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 710 messages
+2026-05-12 15:52:01,489 - __main__ - INFO - Rate: 7.25 msg/sec | Total: 4031 messages
+2026-05-12 15:52:02,110 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 710 messages
+2026-05-12 15:52:09,919 - __main__ - INFO - Rate: 5.71 msg/sec | Total: 4079 messages
+2026-05-12 15:52:11,471 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 722 messages
+2026-05-12 15:52:11,537 - __main__ - INFO - Rate: 5.37 msg/sec | Total: 4085 messages
+2026-05-12 15:52:12,273 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 721 messages
+2026-05-12 15:52:20,030 - __main__ - INFO - Rate: 4.94 msg/sec | Total: 4129 messages
+2026-05-12 15:52:21,554 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 732 messages
+2026-05-12 15:52:21,609 - __main__ - INFO - Rate: 4.47 msg/sec | Total: 4130 messages
+2026-05-12 15:52:22,446 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 732 messages
+2026-05-12 15:52:30,087 - __main__ - INFO - Rate: 4.97 msg/sec | Total: 4179 messages
+2026-05-12 15:52:31,641 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 742 messages
+2026-05-12 15:52:31,716 - __main__ - INFO - Rate: 5.84 msg/sec | Total: 4189 messages
+2026-05-12 15:52:32,452 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 741 messages
+2026-05-12 15:52:40,105 - __main__ - INFO - Rate: 7.29 msg/sec | Total: 4252 messages
+2026-05-12 15:52:41,735 - __main__ - INFO - Rate: 7.09 msg/sec | Total: 4260 messages
+2026-05-12 15:52:41,739 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 751 messages
+2026-05-12 15:52:42,510 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 751 messages
+2026-05-12 15:52:50,109 - __main__ - INFO - Rate: 5.50 msg/sec | Total: 4307 messages
+2026-05-12 15:52:51,778 - __main__ - INFO - Rate: 5.77 msg/sec | Total: 4318 messages
+2026-05-12 15:52:51,852 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 760 messages
+2026-05-12 15:52:52,532 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 761 messages
+2026-05-12 15:53:00,212 - __main__ - INFO - Rate: 6.24 msg/sec | Total: 4370 messages
+2026-05-12 15:53:01,962 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 775 messages
+2026-05-12 15:53:01,966 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 4378 messages
+2026-05-12 15:53:02,717 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 774 messages
+2026-05-12 15:53:10,215 - __main__ - INFO - Rate: 6.40 msg/sec | Total: 4434 messages
+2026-05-12 15:53:12,038 - __main__ - INFO - Rate: 1.69 msg/sec | Total: 792 messages
+2026-05-12 15:53:12,137 - __main__ - INFO - Rate: 6.10 msg/sec | Total: 4440 messages
+2026-05-12 15:53:12,919 - __main__ - INFO - Rate: 1.76 msg/sec | Total: 792 messages
+2026-05-12 15:53:20,228 - __main__ - INFO - Rate: 5.69 msg/sec | Total: 4491 messages
+2026-05-12 15:53:22,141 - __main__ - INFO - Rate: 1.78 msg/sec | Total: 810 messages
+2026-05-12 15:53:22,333 - __main__ - INFO - Rate: 6.28 msg/sec | Total: 4504 messages
+2026-05-12 15:53:23,113 - __main__ - INFO - Rate: 1.86 msg/sec | Total: 811 messages
+2026-05-12 15:53:30,230 - __main__ - INFO - Rate: 7.40 msg/sec | Total: 4565 messages
+2026-05-12 15:53:32,166 - __main__ - INFO - Rate: 1.50 msg/sec | Total: 825 messages
+2026-05-12 15:53:32,349 - __main__ - INFO - Rate: 7.19 msg/sec | Total: 4576 messages
+2026-05-12 15:53:33,200 - __main__ - INFO - Rate: 1.29 msg/sec | Total: 824 messages
+2026-05-12 15:53:40,238 - __main__ - INFO - Rate: 6.99 msg/sec | Total: 4635 messages
+2026-05-12 15:53:42,202 - __main__ - INFO - Rate: 1.89 msg/sec | Total: 844 messages
+2026-05-12 15:53:42,396 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 4640 messages
+2026-05-12 15:53:43,302 - __main__ - INFO - Rate: 1.98 msg/sec | Total: 844 messages
+2026-05-12 15:53:50,279 - __main__ - INFO - Rate: 6.27 msg/sec | Total: 4698 messages
+2026-05-12 15:53:52,351 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 855 messages
+2026-05-12 15:53:52,462 - __main__ - INFO - Rate: 7.05 msg/sec | Total: 4711 messages
+2026-05-12 15:53:53,392 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 854 messages
+2026-05-12 15:54:00,322 - __main__ - INFO - Rate: 5.08 msg/sec | Total: 4749 messages
+2026-05-12 15:54:02,413 - __main__ - INFO - Rate: 1.89 msg/sec | Total: 874 messages
+2026-05-12 15:54:02,634 - __main__ - INFO - Rate: 5.31 msg/sec | Total: 4765 messages
+2026-05-12 15:54:03,452 - __main__ - INFO - Rate: 1.99 msg/sec | Total: 874 messages
+2026-05-12 15:54:10,355 - __main__ - INFO - Rate: 6.08 msg/sec | Total: 4810 messages
+2026-05-12 15:54:12,502 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 886 messages
+2026-05-12 15:54:12,675 - __main__ - INFO - Rate: 5.68 msg/sec | Total: 4822 messages
+2026-05-12 15:54:13,539 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 885 messages
+2026-05-12 15:54:20,360 - __main__ - INFO - Rate: 5.80 msg/sec | Total: 4868 messages
+2026-05-12 15:54:22,570 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 898 messages
+2026-05-12 15:54:22,772 - __main__ - INFO - Rate: 5.74 msg/sec | Total: 4880 messages
+2026-05-12 15:54:23,574 - __main__ - INFO - Rate: 1.30 msg/sec | Total: 898 messages
+2026-05-12 15:54:30,423 - __main__ - INFO - Rate: 5.66 msg/sec | Total: 4925 messages
+2026-05-12 15:54:32,655 - __main__ - INFO - Rate: 1.29 msg/sec | Total: 911 messages
+2026-05-12 15:54:32,795 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 4939 messages
+2026-05-12 15:54:33,611 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 912 messages
+2026-05-12 15:54:40,511 - __main__ - INFO - Rate: 6.25 msg/sec | Total: 4988 messages
+2026-05-12 15:54:42,742 - __main__ - INFO - Rate: 1.69 msg/sec | Total: 928 messages
+2026-05-12 15:54:42,869 - __main__ - INFO - Rate: 6.55 msg/sec | Total: 5005 messages
+2026-05-12 15:54:43,712 - __main__ - INFO - Rate: 1.58 msg/sec | Total: 928 messages
+2026-05-12 15:54:50,588 - __main__ - INFO - Rate: 7.84 msg/sec | Total: 5067 messages
+2026-05-12 15:54:52,914 - __main__ - INFO - Rate: 7.47 msg/sec | Total: 5080 messages
+2026-05-12 15:54:52,930 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 937 messages
+2026-05-12 15:54:53,748 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 936 messages
+2026-05-12 15:55:00,744 - __main__ - INFO - Rate: 6.70 msg/sec | Total: 5135 messages
+2026-05-12 15:55:02,926 - __main__ - INFO - Rate: 6.49 msg/sec | Total: 5145 messages
+2026-05-12 15:55:02,997 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 951 messages
+2026-05-12 15:55:03,831 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 950 messages
+2026-05-12 15:55:10,764 - __main__ - INFO - Rate: 6.29 msg/sec | Total: 5198 messages
+2026-05-12 15:55:13,028 - __main__ - INFO - Rate: 6.43 msg/sec | Total: 5210 messages
+2026-05-12 15:55:13,066 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 961 messages
+2026-05-12 15:55:13,901 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 962 messages
+2026-05-12 15:55:20,850 - __main__ - INFO - Rate: 6.25 msg/sec | Total: 5261 messages
+2026-05-12 15:55:23,036 - __main__ - INFO - Rate: 5.40 msg/sec | Total: 5264 messages
+2026-05-12 15:55:23,163 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 973 messages
+2026-05-12 15:55:23,986 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 972 messages
+2026-05-12 15:55:30,905 - __main__ - INFO - Rate: 5.97 msg/sec | Total: 5321 messages
+2026-05-12 15:55:33,083 - __main__ - INFO - Rate: 6.97 msg/sec | Total: 5334 messages
+2026-05-12 15:55:33,288 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 982 messages
+2026-05-12 15:55:34,170 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 983 messages
+2026-05-12 15:55:40,933 - __main__ - INFO - Rate: 5.48 msg/sec | Total: 5376 messages
+2026-05-12 15:55:43,105 - __main__ - INFO - Rate: 5.19 msg/sec | Total: 5386 messages
+2026-05-12 15:55:43,324 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 992 messages
+2026-05-12 15:55:44,268 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 992 messages
+2026-05-12 15:55:51,039 - __main__ - INFO - Rate: 5.44 msg/sec | Total: 5431 messages
+2026-05-12 15:55:53,188 - __main__ - INFO - Rate: 5.45 msg/sec | Total: 5441 messages
+2026-05-12 15:55:53,486 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1000 messages
+2026-05-12 15:55:54,320 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 999 messages
+2026-05-12 15:56:01,144 - __main__ - INFO - Rate: 5.84 msg/sec | Total: 5490 messages
+2026-05-12 15:56:03,233 - __main__ - INFO - Rate: 6.57 msg/sec | Total: 5507 messages
+2026-05-12 15:56:03,603 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1012 messages
+2026-05-12 15:56:04,355 - __main__ - INFO - Rate: 1.59 msg/sec | Total: 1015 messages
+2026-05-12 15:56:11,228 - __main__ - INFO - Rate: 6.94 msg/sec | Total: 5560 messages
+2026-05-12 15:56:13,328 - __main__ - INFO - Rate: 6.14 msg/sec | Total: 5569 messages
+2026-05-12 15:56:13,655 - __main__ - INFO - Rate: 1.99 msg/sec | Total: 1032 messages
+2026-05-12 15:56:14,471 - __main__ - INFO - Rate: 1.58 msg/sec | Total: 1031 messages
+2026-05-12 15:56:21,339 - __main__ - INFO - Rate: 6.43 msg/sec | Total: 5625 messages
+2026-05-12 15:56:23,446 - __main__ - INFO - Rate: 7.02 msg/sec | Total: 5640 messages
+2026-05-12 15:56:23,708 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1042 messages
+2026-05-12 15:56:24,542 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1041 messages
+2026-05-12 15:56:31,366 - __main__ - INFO - Rate: 6.28 msg/sec | Total: 5688 messages
+2026-05-12 15:56:33,457 - __main__ - INFO - Rate: 5.79 msg/sec | Total: 5698 messages
+2026-05-12 15:56:33,811 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1054 messages
+2026-05-12 15:56:34,675 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1053 messages
+2026-05-12 15:56:41,494 - __main__ - INFO - Rate: 6.52 msg/sec | Total: 5754 messages
+2026-05-12 15:56:43,476 - __main__ - INFO - Rate: 6.89 msg/sec | Total: 5767 messages
+2026-05-12 15:56:43,924 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 1068 messages
+2026-05-12 15:56:44,835 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1068 messages
+2026-05-12 15:56:51,521 - __main__ - INFO - Rate: 6.68 msg/sec | Total: 5821 messages
+2026-05-12 15:56:53,523 - __main__ - INFO - Rate: 6.17 msg/sec | Total: 5829 messages
+2026-05-12 15:56:54,121 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 1077 messages
+2026-05-12 15:56:54,998 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1077 messages
+2026-05-12 15:57:01,592 - __main__ - INFO - Rate: 6.06 msg/sec | Total: 5882 messages
+2026-05-12 15:57:03,594 - __main__ - INFO - Rate: 6.26 msg/sec | Total: 5892 messages
+2026-05-12 15:57:04,299 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1085 messages
+2026-05-12 15:57:05,146 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1085 messages
+2026-05-12 15:57:11,699 - __main__ - INFO - Rate: 5.94 msg/sec | Total: 5942 messages
+2026-05-12 15:57:13,787 - __main__ - INFO - Rate: 6.28 msg/sec | Total: 5956 messages
+2026-05-12 15:57:14,380 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 1100 messages
+2026-05-12 15:57:15,201 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 1099 messages
+2026-05-12 15:57:21,811 - __main__ - INFO - Rate: 4.94 msg/sec | Total: 5992 messages
+2026-05-12 15:57:23,887 - __main__ - INFO - Rate: 4.65 msg/sec | Total: 6003 messages
+2026-05-12 15:57:24,453 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1109 messages
+2026-05-12 15:57:25,268 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1108 messages
+2026-05-12 15:57:31,855 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 6056 messages
+2026-05-12 15:57:33,926 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 6067 messages
+2026-05-12 15:57:34,553 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 1123 messages
+2026-05-12 15:57:35,414 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1123 messages
+2026-05-12 15:57:41,889 - __main__ - INFO - Rate: 6.28 msg/sec | Total: 6119 messages
+2026-05-12 15:57:44,057 - __main__ - INFO - Rate: 5.72 msg/sec | Total: 6125 messages
+2026-05-12 15:57:44,653 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1134 messages
+2026-05-12 15:57:45,454 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 1134 messages
+2026-05-12 15:57:51,962 - __main__ - INFO - Rate: 5.36 msg/sec | Total: 6173 messages
+2026-05-12 15:57:54,174 - __main__ - INFO - Rate: 5.54 msg/sec | Total: 6181 messages
+2026-05-12 15:57:54,814 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1144 messages
+2026-05-12 15:57:55,630 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 1143 messages
+2026-05-12 15:58:02,016 - __main__ - INFO - Rate: 6.07 msg/sec | Total: 6234 messages
+2026-05-12 15:58:04,193 - __main__ - INFO - Rate: 6.59 msg/sec | Total: 6247 messages
+2026-05-12 15:58:04,835 - __main__ - INFO - Rate: 1.70 msg/sec | Total: 1161 messages
+2026-05-12 15:58:05,811 - __main__ - INFO - Rate: 1.77 msg/sec | Total: 1161 messages
+2026-05-12 15:58:12,055 - __main__ - INFO - Rate: 6.67 msg/sec | Total: 6301 messages
+2026-05-12 15:58:14,220 - __main__ - INFO - Rate: 6.78 msg/sec | Total: 6315 messages
+2026-05-12 15:58:14,845 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 1172 messages
+2026-05-12 15:58:15,863 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1171 messages
+2026-05-12 15:58:22,059 - __main__ - INFO - Rate: 6.70 msg/sec | Total: 6368 messages
+2026-05-12 15:58:24,365 - __main__ - INFO - Rate: 6.21 msg/sec | Total: 6378 messages
+2026-05-12 15:58:24,846 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1182 messages
+2026-05-12 15:58:25,978 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1182 messages
+2026-05-12 15:58:32,206 - __main__ - INFO - Rate: 6.21 msg/sec | Total: 6431 messages
+2026-05-12 15:58:34,383 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 6437 messages
+2026-05-12 15:58:34,918 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1190 messages
+2026-05-12 15:58:36,125 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1190 messages
+2026-05-12 15:58:42,228 - __main__ - INFO - Rate: 7.08 msg/sec | Total: 6502 messages
+2026-05-12 15:58:44,550 - __main__ - INFO - Rate: 7.28 msg/sec | Total: 6511 messages
+2026-05-12 15:58:45,019 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1201 messages
+2026-05-12 15:58:46,224 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1200 messages
+2026-05-12 15:58:52,230 - __main__ - INFO - Rate: 5.70 msg/sec | Total: 6559 messages
+2026-05-12 15:58:54,601 - __main__ - INFO - Rate: 6.27 msg/sec | Total: 6574 messages
+2026-05-12 15:58:55,043 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 1207 messages
+2026-05-12 15:58:56,343 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1208 messages
+2026-05-12 15:59:02,431 - __main__ - INFO - Rate: 6.86 msg/sec | Total: 6629 messages
+2026-05-12 15:59:04,646 - __main__ - INFO - Rate: 6.97 msg/sec | Total: 6644 messages
+2026-05-12 15:59:05,046 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1217 messages
+2026-05-12 15:59:06,427 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1217 messages
+2026-05-12 15:59:12,606 - __main__ - INFO - Rate: 6.49 msg/sec | Total: 6695 messages
+2026-05-12 15:59:14,650 - __main__ - INFO - Rate: 6.30 msg/sec | Total: 6707 messages
+2026-05-12 15:59:15,101 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1222 messages
+2026-05-12 15:59:16,558 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 1222 messages
+2026-05-12 15:59:22,740 - __main__ - INFO - Rate: 6.32 msg/sec | Total: 6759 messages
+2026-05-12 15:59:24,820 - __main__ - INFO - Rate: 6.59 msg/sec | Total: 6774 messages
+2026-05-12 15:59:25,294 - __main__ - INFO - Rate: 1.37 msg/sec | Total: 1236 messages
+2026-05-12 15:59:26,691 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1237 messages
+2026-05-12 15:59:32,900 - __main__ - INFO - Rate: 6.40 msg/sec | Total: 6824 messages
+2026-05-12 15:59:34,860 - __main__ - INFO - Rate: 6.57 msg/sec | Total: 6840 messages
+2026-05-12 15:59:35,379 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1241 messages
+2026-05-12 15:59:36,695 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1242 messages
+2026-05-12 15:59:42,955 - __main__ - INFO - Rate: 7.06 msg/sec | Total: 6895 messages
+2026-05-12 15:59:44,868 - __main__ - INFO - Rate: 6.50 msg/sec | Total: 6905 messages
+2026-05-12 15:59:45,494 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1256 messages
+2026-05-12 15:59:46,857 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 1256 messages
+2026-05-12 15:59:52,990 - __main__ - INFO - Rate: 6.58 msg/sec | Total: 6961 messages
+2026-05-12 15:59:54,944 - __main__ - INFO - Rate: 6.55 msg/sec | Total: 6971 messages
+2026-05-12 15:59:55,580 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1263 messages
+2026-05-12 15:59:57,011 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1264 messages
+2026-05-12 16:00:03,184 - __main__ - INFO - Rate: 5.59 msg/sec | Total: 7018 messages
+2026-05-12 16:00:05,122 - __main__ - INFO - Rate: 5.90 msg/sec | Total: 7031 messages
+2026-05-12 16:00:05,653 - __main__ - INFO - Rate: 1.59 msg/sec | Total: 1279 messages
+2026-05-12 16:00:07,123 - __main__ - INFO - Rate: 1.58 msg/sec | Total: 1280 messages
+2026-05-12 16:00:13,192 - __main__ - INFO - Rate: 5.60 msg/sec | Total: 7074 messages
+2026-05-12 16:00:15,247 - __main__ - INFO - Rate: 4.54 msg/sec | Total: 7077 messages
+2026-05-12 16:00:15,765 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1291 messages
+2026-05-12 16:00:17,247 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 1294 messages
+2026-05-12 16:00:23,376 - __main__ - INFO - Rate: 6.58 msg/sec | Total: 7141 messages
+2026-05-12 16:00:25,317 - __main__ - INFO - Rate: 6.85 msg/sec | Total: 7146 messages
+2026-05-12 16:00:25,974 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1303 messages
+2026-05-12 16:00:27,316 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1303 messages
+2026-05-12 16:00:33,392 - __main__ - INFO - Rate: 6.59 msg/sec | Total: 7207 messages
+2026-05-12 16:00:35,512 - __main__ - INFO - Rate: 6.87 msg/sec | Total: 7216 messages
+2026-05-12 16:00:36,014 - __main__ - INFO - Rate: 1.59 msg/sec | Total: 1319 messages
+2026-05-12 16:00:37,334 - __main__ - INFO - Rate: 1.70 msg/sec | Total: 1320 messages
+2026-05-12 16:00:43,469 - __main__ - INFO - Rate: 4.86 msg/sec | Total: 7256 messages
+2026-05-12 16:00:45,628 - __main__ - INFO - Rate: 4.75 msg/sec | Total: 7264 messages
+2026-05-12 16:00:46,034 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1326 messages
+2026-05-12 16:00:47,478 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 1325 messages
+2026-05-12 16:00:53,518 - __main__ - INFO - Rate: 5.97 msg/sec | Total: 7316 messages
+2026-05-12 16:00:55,683 - __main__ - INFO - Rate: 6.07 msg/sec | Total: 7325 messages
+2026-05-12 16:00:56,088 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1337 messages
+2026-05-12 16:00:57,640 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 1338 messages
+2026-05-12 16:01:03,571 - __main__ - INFO - Rate: 6.57 msg/sec | Total: 7382 messages
+2026-05-12 16:01:05,815 - __main__ - INFO - Rate: 6.12 msg/sec | Total: 7387 messages
+2026-05-12 16:01:06,203 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1346 messages
+2026-05-12 16:01:07,677 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1346 messages
+2026-05-12 16:01:13,607 - __main__ - INFO - Rate: 5.68 msg/sec | Total: 7439 messages
+2026-05-12 16:01:15,844 - __main__ - INFO - Rate: 6.78 msg/sec | Total: 7455 messages
+2026-05-12 16:01:16,354 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1355 messages
+2026-05-12 16:01:17,779 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1354 messages
+2026-05-12 16:01:23,626 - __main__ - INFO - Rate: 7.59 msg/sec | Total: 7515 messages
+2026-05-12 16:01:25,919 - __main__ - INFO - Rate: 7.25 msg/sec | Total: 7528 messages
+2026-05-12 16:01:26,375 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1363 messages
+2026-05-12 16:01:27,799 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1363 messages
+2026-05-12 16:01:33,678 - __main__ - INFO - Rate: 5.77 msg/sec | Total: 7573 messages
+2026-05-12 16:01:36,035 - __main__ - INFO - Rate: 5.14 msg/sec | Total: 7580 messages
+2026-05-12 16:01:36,398 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1372 messages
+2026-05-12 16:01:37,826 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1372 messages
+2026-05-12 16:01:43,801 - __main__ - INFO - Rate: 6.52 msg/sec | Total: 7639 messages
+2026-05-12 16:01:46,058 - __main__ - INFO - Rate: 7.18 msg/sec | Total: 7652 messages
+2026-05-12 16:01:46,498 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1379 messages
+2026-05-12 16:01:47,894 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1379 messages
+2026-05-12 16:01:53,964 - __main__ - INFO - Rate: 6.20 msg/sec | Total: 7702 messages
+2026-05-12 16:01:56,134 - __main__ - INFO - Rate: 5.95 msg/sec | Total: 7712 messages
+2026-05-12 16:01:56,566 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1389 messages
+2026-05-12 16:01:57,932 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1389 messages
+2026-05-12 16:02:04,140 - __main__ - INFO - Rate: 4.82 msg/sec | Total: 7751 messages
+2026-05-12 16:02:06,156 - __main__ - INFO - Rate: 4.59 msg/sec | Total: 7758 messages
+2026-05-12 16:02:06,602 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1399 messages
+2026-05-12 16:02:08,124 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1399 messages
+2026-05-12 16:02:14,209 - __main__ - INFO - Rate: 5.26 msg/sec | Total: 7804 messages
+2026-05-12 16:02:16,298 - __main__ - INFO - Rate: 5.62 msg/sec | Total: 7815 messages
+2026-05-12 16:02:16,671 - __main__ - INFO - Rate: 0.30 msg/sec | Total: 1402 messages
+2026-05-12 16:02:18,176 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1404 messages
+2026-05-12 16:02:24,328 - __main__ - INFO - Rate: 6.03 msg/sec | Total: 7865 messages
+2026-05-12 16:02:26,394 - __main__ - INFO - Rate: 5.45 msg/sec | Total: 7870 messages
+2026-05-12 16:02:26,676 - __main__ - INFO - Rate: 2.00 msg/sec | Total: 1422 messages
+2026-05-12 16:02:28,279 - __main__ - INFO - Rate: 1.78 msg/sec | Total: 1422 messages
+2026-05-12 16:02:34,331 - __main__ - INFO - Rate: 4.90 msg/sec | Total: 7914 messages
+2026-05-12 16:02:36,416 - __main__ - INFO - Rate: 5.59 msg/sec | Total: 7926 messages
+2026-05-12 16:02:36,827 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1433 messages
+2026-05-12 16:02:38,412 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1433 messages
+2026-05-12 16:02:44,399 - __main__ - INFO - Rate: 5.26 msg/sec | Total: 7967 messages
+2026-05-12 16:02:46,522 - __main__ - INFO - Rate: 5.54 msg/sec | Total: 7982 messages
+2026-05-12 16:02:46,880 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1443 messages
+2026-05-12 16:02:48,606 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1443 messages
+2026-05-12 16:02:54,519 - __main__ - INFO - Rate: 7.21 msg/sec | Total: 8040 messages
+2026-05-12 16:02:56,604 - __main__ - INFO - Rate: 6.15 msg/sec | Total: 8044 messages
+2026-05-12 16:02:57,026 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 1449 messages
+2026-05-12 16:02:58,738 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 1449 messages
+2026-05-12 16:03:04,599 - __main__ - INFO - Rate: 5.36 msg/sec | Total: 8094 messages
+2026-05-12 16:03:06,751 - __main__ - INFO - Rate: 5.32 msg/sec | Total: 8098 messages
+2026-05-12 16:03:07,159 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1456 messages
+2026-05-12 16:03:08,807 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1457 messages
+2026-05-12 16:03:14,801 - __main__ - INFO - Rate: 4.61 msg/sec | Total: 8141 messages
+2026-05-12 16:03:16,769 - __main__ - INFO - Rate: 5.19 msg/sec | Total: 8150 messages
+2026-05-12 16:03:17,198 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 1462 messages
+2026-05-12 16:03:18,846 - __main__ - INFO - Rate: 0.40 msg/sec | Total: 1461 messages
+2026-05-12 16:03:24,977 - __main__ - INFO - Rate: 4.82 msg/sec | Total: 8190 messages
+2026-05-12 16:03:26,920 - __main__ - INFO - Rate: 4.73 msg/sec | Total: 8198 messages
+2026-05-12 16:03:27,296 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1470 messages
+2026-05-12 16:03:28,902 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1470 messages
+2026-05-12 16:03:35,031 - __main__ - INFO - Rate: 5.07 msg/sec | Total: 8241 messages
+2026-05-12 16:03:36,962 - __main__ - INFO - Rate: 5.08 msg/sec | Total: 8249 messages
+2026-05-12 16:03:37,493 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 1479 messages
+2026-05-12 16:03:38,905 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1478 messages
+2026-05-12 16:03:45,040 - __main__ - INFO - Rate: 5.49 msg/sec | Total: 8296 messages
+2026-05-12 16:03:46,973 - __main__ - INFO - Rate: 5.49 msg/sec | Total: 8304 messages
+2026-05-12 16:03:47,501 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1487 messages
+2026-05-12 16:03:48,928 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1486 messages
+2026-05-12 16:03:55,155 - __main__ - INFO - Rate: 5.83 msg/sec | Total: 8355 messages
+2026-05-12 16:03:56,993 - __main__ - INFO - Rate: 6.29 msg/sec | Total: 8367 messages
+2026-05-12 16:03:57,567 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1492 messages
+2026-05-12 16:03:59,105 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 1492 messages
+2026-05-12 16:04:05,240 - __main__ - INFO - Rate: 5.26 msg/sec | Total: 8408 messages
+2026-05-12 16:04:07,057 - __main__ - INFO - Rate: 5.07 msg/sec | Total: 8418 messages
+2026-05-12 16:04:07,715 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1500 messages
+2026-05-12 16:04:09,169 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1499 messages
+2026-05-12 16:04:15,439 - __main__ - INFO - Rate: 6.18 msg/sec | Total: 8471 messages
+2026-05-12 16:04:17,059 - __main__ - INFO - Rate: 5.90 msg/sec | Total: 8477 messages
+2026-05-12 16:04:17,771 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1511 messages
+2026-05-12 16:04:19,198 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 1510 messages
+2026-05-12 16:04:25,471 - __main__ - INFO - Rate: 7.08 msg/sec | Total: 8542 messages
+2026-05-12 16:04:27,062 - __main__ - INFO - Rate: 7.40 msg/sec | Total: 8551 messages
+2026-05-12 16:04:27,823 - __main__ - INFO - Rate: 1.59 msg/sec | Total: 1527 messages
+2026-05-12 16:04:29,235 - __main__ - INFO - Rate: 1.89 msg/sec | Total: 1529 messages
+2026-05-12 16:04:35,585 - __main__ - INFO - Rate: 6.23 msg/sec | Total: 8605 messages
+2026-05-12 16:04:37,125 - __main__ - INFO - Rate: 6.06 msg/sec | Total: 8612 messages
+2026-05-12 16:04:37,969 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1537 messages
+2026-05-12 16:04:39,382 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1539 messages
+2026-05-12 16:04:45,733 - __main__ - INFO - Rate: 6.11 msg/sec | Total: 8667 messages
+2026-05-12 16:04:47,305 - __main__ - INFO - Rate: 5.89 msg/sec | Total: 8672 messages
+2026-05-12 16:04:48,072 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1546 messages
+2026-05-12 16:04:49,560 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1549 messages
+2026-05-12 16:04:55,771 - __main__ - INFO - Rate: 6.08 msg/sec | Total: 8728 messages
+2026-05-12 16:04:57,449 - __main__ - INFO - Rate: 6.31 msg/sec | Total: 8736 messages
+2026-05-12 16:04:58,247 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1557 messages
+2026-05-12 16:04:59,696 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1557 messages
+2026-05-12 16:05:05,812 - __main__ - INFO - Rate: 6.77 msg/sec | Total: 8796 messages
+2026-05-12 16:05:07,479 - __main__ - INFO - Rate: 7.38 msg/sec | Total: 8810 messages
+2026-05-12 16:05:08,259 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1565 messages
+2026-05-12 16:05:09,885 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1564 messages
+2026-05-12 16:05:15,845 - __main__ - INFO - Rate: 6.98 msg/sec | Total: 8866 messages
+2026-05-12 16:05:17,498 - __main__ - INFO - Rate: 6.19 msg/sec | Total: 8872 messages
+2026-05-12 16:05:18,401 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1577 messages
+2026-05-12 16:05:20,064 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1576 messages
+2026-05-12 16:05:25,965 - __main__ - INFO - Rate: 5.63 msg/sec | Total: 8923 messages
+2026-05-12 16:05:27,670 - __main__ - INFO - Rate: 5.80 msg/sec | Total: 8931 messages
+2026-05-12 16:05:28,408 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1585 messages
+2026-05-12 16:05:30,165 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1588 messages
+2026-05-12 16:05:36,156 - __main__ - INFO - Rate: 5.40 msg/sec | Total: 8978 messages
+2026-05-12 16:05:37,802 - __main__ - INFO - Rate: 5.33 msg/sec | Total: 8985 messages
+2026-05-12 16:05:38,604 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1597 messages
+2026-05-12 16:05:40,251 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1596 messages
+2026-05-12 16:05:46,164 - __main__ - INFO - Rate: 4.70 msg/sec | Total: 9025 messages
+2026-05-12 16:05:47,872 - __main__ - INFO - Rate: 4.67 msg/sec | Total: 9032 messages
+2026-05-12 16:05:48,672 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1604 messages
+2026-05-12 16:05:50,334 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1603 messages
+2026-05-12 16:05:56,184 - __main__ - INFO - Rate: 6.09 msg/sec | Total: 9086 messages
+2026-05-12 16:05:57,879 - __main__ - INFO - Rate: 5.70 msg/sec | Total: 9089 messages
+2026-05-12 16:05:58,694 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1614 messages
+2026-05-12 16:06:00,483 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1615 messages
+2026-05-12 16:06:06,223 - __main__ - INFO - Rate: 5.68 msg/sec | Total: 9143 messages
+2026-05-12 16:06:07,965 - __main__ - INFO - Rate: 5.45 msg/sec | Total: 9144 messages
+2026-05-12 16:06:08,729 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 1620 messages
+2026-05-12 16:06:10,533 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1620 messages
+2026-05-12 16:06:16,227 - __main__ - INFO - Rate: 5.70 msg/sec | Total: 9200 messages
+2026-05-12 16:06:17,986 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 9208 messages
+2026-05-12 16:06:18,827 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1628 messages
+2026-05-12 16:06:20,701 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1630 messages
+2026-05-12 16:06:26,320 - __main__ - INFO - Rate: 5.75 msg/sec | Total: 9258 messages
+2026-05-12 16:06:28,074 - __main__ - INFO - Rate: 6.15 msg/sec | Total: 9270 messages
+2026-05-12 16:06:28,965 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1637 messages
+2026-05-12 16:06:30,861 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1637 messages
+2026-05-12 16:06:36,347 - __main__ - INFO - Rate: 7.68 msg/sec | Total: 9335 messages
+2026-05-12 16:06:38,265 - __main__ - INFO - Rate: 6.87 msg/sec | Total: 9340 messages
+2026-05-12 16:06:39,127 - __main__ - INFO - Rate: 1.38 msg/sec | Total: 1651 messages
+2026-05-12 16:06:40,961 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 1651 messages
+2026-05-12 16:06:46,514 - __main__ - INFO - Rate: 6.79 msg/sec | Total: 9404 messages
+2026-05-12 16:06:48,395 - __main__ - INFO - Rate: 7.60 msg/sec | Total: 9417 messages
+2026-05-12 16:06:49,165 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1660 messages
+2026-05-12 16:06:51,111 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1660 messages
+2026-05-12 16:06:56,599 - __main__ - INFO - Rate: 7.93 msg/sec | Total: 9484 messages
+2026-05-12 16:06:58,578 - __main__ - INFO - Rate: 7.17 msg/sec | Total: 9490 messages
+2026-05-12 16:06:59,318 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 1673 messages
+2026-05-12 16:07:01,290 - __main__ - INFO - Rate: 1.57 msg/sec | Total: 1676 messages
+2026-05-12 16:07:06,608 - __main__ - INFO - Rate: 6.69 msg/sec | Total: 9551 messages
+2026-05-12 16:07:08,654 - __main__ - INFO - Rate: 7.25 msg/sec | Total: 9563 messages
+2026-05-12 16:07:09,350 - __main__ - INFO - Rate: 2.29 msg/sec | Total: 1696 messages
+2026-05-12 16:07:11,433 - __main__ - INFO - Rate: 2.07 msg/sec | Total: 1697 messages
+2026-05-12 16:07:16,736 - __main__ - INFO - Rate: 5.43 msg/sec | Total: 9606 messages
+2026-05-12 16:07:18,688 - __main__ - INFO - Rate: 4.78 msg/sec | Total: 9611 messages
+2026-05-12 16:07:19,511 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1707 messages
+2026-05-12 16:07:21,618 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1707 messages
+2026-05-12 16:07:26,824 - __main__ - INFO - Rate: 6.15 msg/sec | Total: 9668 messages
+2026-05-12 16:07:28,862 - __main__ - INFO - Rate: 6.09 msg/sec | Total: 9673 messages
+2026-05-12 16:07:29,693 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1717 messages
+2026-05-12 16:07:31,697 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1719 messages
+2026-05-12 16:07:36,825 - __main__ - INFO - Rate: 5.60 msg/sec | Total: 9724 messages
+2026-05-12 16:07:38,967 - __main__ - INFO - Rate: 6.04 msg/sec | Total: 9734 messages
+2026-05-12 16:07:39,867 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1729 messages
+2026-05-12 16:07:41,735 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 1731 messages
+2026-05-12 16:07:47,001 - __main__ - INFO - Rate: 5.11 msg/sec | Total: 9776 messages
+2026-05-12 16:07:49,029 - __main__ - INFO - Rate: 4.97 msg/sec | Total: 9784 messages
+2026-05-12 16:07:50,000 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1738 messages
+2026-05-12 16:07:51,862 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1743 messages
+2026-05-12 16:07:57,106 - __main__ - INFO - Rate: 5.84 msg/sec | Total: 9835 messages
+2026-05-12 16:07:59,097 - __main__ - INFO - Rate: 5.96 msg/sec | Total: 9844 messages
+2026-05-12 16:08:00,133 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1753 messages
+2026-05-12 16:08:02,049 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1755 messages
+2026-05-12 16:08:07,111 - __main__ - INFO - Rate: 5.70 msg/sec | Total: 9892 messages
+2026-05-12 16:08:09,119 - __main__ - INFO - Rate: 5.99 msg/sec | Total: 9904 messages
+2026-05-12 16:08:10,184 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1762 messages
+2026-05-12 16:08:12,122 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1763 messages
+2026-05-12 16:08:17,179 - __main__ - INFO - Rate: 6.36 msg/sec | Total: 9956 messages
+2026-05-12 16:08:19,220 - __main__ - INFO - Rate: 5.94 msg/sec | Total: 9964 messages
+2026-05-12 16:08:20,348 - __main__ - INFO - Rate: 0.39 msg/sec | Total: 1766 messages
+2026-05-12 16:08:22,325 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 1768 messages
+2026-05-12 16:08:27,331 - __main__ - INFO - Rate: 5.02 msg/sec | Total: 10007 messages
+2026-05-12 16:08:29,339 - __main__ - INFO - Rate: 5.14 msg/sec | Total: 10016 messages
+2026-05-12 16:08:30,389 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 1778 messages
+2026-05-12 16:08:32,520 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1780 messages
+2026-05-12 16:08:37,493 - __main__ - INFO - Rate: 5.41 msg/sec | Total: 10062 messages
+2026-05-12 16:08:39,435 - __main__ - INFO - Rate: 5.15 msg/sec | Total: 10068 messages
+2026-05-12 16:08:40,517 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1788 messages
+2026-05-12 16:08:42,604 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1789 messages
+2026-05-12 16:08:47,645 - __main__ - INFO - Rate: 5.22 msg/sec | Total: 10115 messages
+2026-05-12 16:08:49,488 - __main__ - INFO - Rate: 5.37 msg/sec | Total: 10122 messages
+2026-05-12 16:08:50,714 - __main__ - INFO - Rate: 1.37 msg/sec | Total: 1802 messages
+2026-05-12 16:08:52,736 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 1804 messages
+2026-05-12 16:08:57,803 - __main__ - INFO - Rate: 5.91 msg/sec | Total: 10175 messages
+2026-05-12 16:08:59,525 - __main__ - INFO - Rate: 6.48 msg/sec | Total: 10187 messages
+2026-05-12 16:09:00,844 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 1814 messages
+2026-05-12 16:09:02,867 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1815 messages
+2026-05-12 16:09:07,886 - __main__ - INFO - Rate: 7.44 msg/sec | Total: 10250 messages
+2026-05-12 16:09:09,689 - __main__ - INFO - Rate: 7.58 msg/sec | Total: 10264 messages
+2026-05-12 16:09:10,869 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1824 messages
+2026-05-12 16:09:12,951 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1824 messages
+2026-05-12 16:09:18,048 - __main__ - INFO - Rate: 7.18 msg/sec | Total: 10323 messages
+2026-05-12 16:09:19,729 - __main__ - INFO - Rate: 6.97 msg/sec | Total: 10334 messages
+2026-05-12 16:09:21,064 - __main__ - INFO - Rate: 0.49 msg/sec | Total: 1829 messages
+2026-05-12 16:09:23,020 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1829 messages
+2026-05-12 16:09:28,179 - __main__ - INFO - Rate: 7.90 msg/sec | Total: 10403 messages
+2026-05-12 16:09:29,842 - __main__ - INFO - Rate: 7.42 msg/sec | Total: 10409 messages
+2026-05-12 16:09:31,196 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1837 messages
+2026-05-12 16:09:33,061 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1839 messages
+2026-05-12 16:09:38,234 - __main__ - INFO - Rate: 7.16 msg/sec | Total: 10475 messages
+2026-05-12 16:09:39,894 - __main__ - INFO - Rate: 7.66 msg/sec | Total: 10486 messages
+2026-05-12 16:09:41,237 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 1847 messages
+2026-05-12 16:09:43,131 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1849 messages
+2026-05-12 16:09:48,247 - __main__ - INFO - Rate: 7.89 msg/sec | Total: 10554 messages
+2026-05-12 16:09:49,948 - __main__ - INFO - Rate: 7.56 msg/sec | Total: 10562 messages
+2026-05-12 16:09:51,361 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1859 messages
+2026-05-12 16:09:53,277 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1859 messages
+2026-05-12 16:09:58,278 - __main__ - INFO - Rate: 6.38 msg/sec | Total: 10618 messages
+2026-05-12 16:09:59,996 - __main__ - INFO - Rate: 5.87 msg/sec | Total: 10621 messages
+2026-05-12 16:10:01,447 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 1869 messages
+2026-05-12 16:10:03,471 - __main__ - INFO - Rate: 0.98 msg/sec | Total: 1869 messages
+2026-05-12 16:10:08,355 - __main__ - INFO - Rate: 6.25 msg/sec | Total: 10681 messages
+2026-05-12 16:10:10,008 - __main__ - INFO - Rate: 7.09 msg/sec | Total: 10692 messages
+2026-05-12 16:10:11,459 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1876 messages
+2026-05-12 16:10:13,598 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1877 messages
+2026-05-12 16:10:18,463 - __main__ - INFO - Rate: 5.34 msg/sec | Total: 10735 messages
+2026-05-12 16:10:20,063 - __main__ - INFO - Rate: 5.07 msg/sec | Total: 10743 messages
+2026-05-12 16:10:21,476 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1883 messages
+2026-05-12 16:10:23,753 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1884 messages
+2026-05-12 16:10:28,468 - __main__ - INFO - Rate: 7.40 msg/sec | Total: 10809 messages
+2026-05-12 16:10:30,239 - __main__ - INFO - Rate: 7.08 msg/sec | Total: 10815 messages
+2026-05-12 16:10:31,567 - __main__ - INFO - Rate: 1.49 msg/sec | Total: 1898 messages
+2026-05-12 16:10:33,864 - __main__ - INFO - Rate: 1.58 msg/sec | Total: 1900 messages
+2026-05-12 16:10:38,473 - __main__ - INFO - Rate: 5.70 msg/sec | Total: 10866 messages
+2026-05-12 16:10:40,283 - __main__ - INFO - Rate: 6.67 msg/sec | Total: 10882 messages
+2026-05-12 16:10:41,651 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1907 messages
+2026-05-12 16:10:43,871 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1907 messages
+2026-05-12 16:10:48,634 - __main__ - INFO - Rate: 6.99 msg/sec | Total: 10937 messages
+2026-05-12 16:10:50,349 - __main__ - INFO - Rate: 5.86 msg/sec | Total: 10941 messages
+2026-05-12 16:10:51,836 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1915 messages
+2026-05-12 16:10:54,033 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1916 messages
+2026-05-12 16:10:58,699 - __main__ - INFO - Rate: 5.86 msg/sec | Total: 10996 messages
+2026-05-12 16:11:00,373 - __main__ - INFO - Rate: 6.08 msg/sec | Total: 11002 messages
+2026-05-12 16:11:01,895 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1924 messages
+2026-05-12 16:11:04,057 - __main__ - INFO - Rate: 0.90 msg/sec | Total: 1925 messages
+2026-05-12 16:11:08,899 - __main__ - INFO - Rate: 3.92 msg/sec | Total: 11036 messages
+2026-05-12 16:11:10,424 - __main__ - INFO - Rate: 3.98 msg/sec | Total: 11042 messages
+2026-05-12 16:11:12,008 - __main__ - INFO - Rate: 0.89 msg/sec | Total: 1933 messages
+2026-05-12 16:11:14,076 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1933 messages
+2026-05-12 16:11:19,049 - __main__ - INFO - Rate: 7.19 msg/sec | Total: 11109 messages
+2026-05-12 16:11:20,479 - __main__ - INFO - Rate: 7.46 msg/sec | Total: 11117 messages
+2026-05-12 16:11:22,108 - __main__ - INFO - Rate: 0.50 msg/sec | Total: 1938 messages
+2026-05-12 16:11:24,239 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 1940 messages
+2026-05-12 16:11:29,134 - __main__ - INFO - Rate: 6.54 msg/sec | Total: 11175 messages
+2026-05-12 16:11:30,511 - __main__ - INFO - Rate: 6.68 msg/sec | Total: 11184 messages
+2026-05-12 16:11:32,161 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 1950 messages
+2026-05-12 16:11:34,383 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1951 messages
+2026-05-12 16:11:39,232 - __main__ - INFO - Rate: 7.23 msg/sec | Total: 11248 messages
+2026-05-12 16:11:40,596 - __main__ - INFO - Rate: 6.84 msg/sec | Total: 11253 messages
+2026-05-12 16:11:42,210 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 1958 messages
+2026-05-12 16:11:44,425 - __main__ - INFO - Rate: 0.70 msg/sec | Total: 1958 messages
+2026-05-12 16:11:49,272 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 11312 messages
+2026-05-12 16:11:50,651 - __main__ - INFO - Rate: 6.17 msg/sec | Total: 11315 messages
+2026-05-12 16:11:52,251 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 1964 messages
+2026-05-12 16:11:54,524 - __main__ - INFO - Rate: 0.59 msg/sec | Total: 1964 messages
+2026-05-12 16:11:59,277 - __main__ - INFO - Rate: 6.50 msg/sec | Total: 11377 messages
+2026-05-12 16:12:00,767 - __main__ - INFO - Rate: 7.02 msg/sec | Total: 11386 messages
+2026-05-12 16:12:02,411 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1975 messages
+2026-05-12 16:12:04,675 - __main__ - INFO - Rate: 1.08 msg/sec | Total: 1975 messages
+2026-05-12 16:12:09,300 - __main__ - INFO - Rate: 6.39 msg/sec | Total: 11441 messages
+2026-05-12 16:12:10,774 - __main__ - INFO - Rate: 6.20 msg/sec | Total: 11448 messages
+2026-05-12 16:12:12,530 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 1983 messages
+2026-05-12 16:12:14,757 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 1986 messages
+2026-05-12 16:12:19,409 - __main__ - INFO - Rate: 5.84 msg/sec | Total: 11500 messages
+2026-05-12 16:12:20,791 - __main__ - INFO - Rate: 5.99 msg/sec | Total: 11508 messages
+2026-05-12 16:12:22,687 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 1996 messages
+2026-05-12 16:12:24,966 - __main__ - INFO - Rate: 0.88 msg/sec | Total: 1995 messages
+2026-05-12 16:12:29,461 - __main__ - INFO - Rate: 6.66 msg/sec | Total: 11567 messages
+2026-05-12 16:12:30,896 - __main__ - INFO - Rate: 6.23 msg/sec | Total: 11571 messages
+2026-05-12 16:12:32,726 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 2002 messages
+2026-05-12 16:12:35,027 - __main__ - INFO - Rate: 0.80 msg/sec | Total: 2003 messages
+2026-05-12 16:12:39,481 - __main__ - INFO - Rate: 6.89 msg/sec | Total: 11636 messages
+2026-05-12 16:12:40,918 - __main__ - INFO - Rate: 7.18 msg/sec | Total: 11643 messages
+2026-05-12 16:12:42,798 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 2012 messages
+2026-05-12 16:12:45,064 - __main__ - INFO - Rate: 1.20 msg/sec | Total: 2015 messages
+2026-05-12 16:12:49,500 - __main__ - INFO - Rate: 5.59 msg/sec | Total: 11692 messages
+2026-05-12 16:12:50,997 - __main__ - INFO - Rate: 5.85 msg/sec | Total: 11702 messages
+2026-05-12 16:12:52,959 - __main__ - INFO - Rate: 1.48 msg/sec | Total: 2027 messages
+2026-05-12 16:12:55,248 - __main__ - INFO - Rate: 1.18 msg/sec | Total: 2027 messages
+2026-05-12 16:12:59,539 - __main__ - INFO - Rate: 6.37 msg/sec | Total: 11756 messages
+2026-05-12 16:13:01,046 - __main__ - INFO - Rate: 5.37 msg/sec | Total: 11756 messages
+2026-05-12 16:13:03,024 - __main__ - INFO - Rate: 0.40 msg/sec | Total: 2031 messages
+2026-05-12 16:13:05,321 - __main__ - INFO - Rate: 0.69 msg/sec | Total: 2034 messages
+2026-05-12 16:13:09,567 - __main__ - INFO - Rate: 5.38 msg/sec | Total: 11810 messages
+2026-05-12 16:13:11,074 - __main__ - INFO - Rate: 5.58 msg/sec | Total: 11812 messages
+2026-05-12 16:13:13,119 - __main__ - INFO - Rate: 1.39 msg/sec | Total: 2045 messages
+2026-05-12 16:13:15,349 - __main__ - INFO - Rate: 1.10 msg/sec | Total: 2045 messages
+2026-05-12 16:13:19,652 - __main__ - INFO - Rate: 5.65 msg/sec | Total: 11867 messages
+2026-05-12 16:13:21,085 - __main__ - INFO - Rate: 5.99 msg/sec | Total: 11872 messages
+2026-05-12 16:13:23,156 - __main__ - INFO - Rate: 1.00 msg/sec | Total: 2055 messages
+2026-05-12 16:13:25,442 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 2056 messages
+2026-05-12 16:13:29,726 - __main__ - INFO - Rate: 5.56 msg/sec | Total: 11923 messages
+2026-05-12 16:13:31,127 - __main__ - INFO - Rate: 5.08 msg/sec | Total: 11923 messages
+2026-05-12 16:13:33,257 - __main__ - INFO - Rate: 1.09 msg/sec | Total: 2066 messages
+2026-05-12 16:13:35,540 - __main__ - INFO - Rate: 1.19 msg/sec | Total: 2068 messages
+2026-05-12 16:13:39,855 - __main__ - INFO - Rate: 6.02 msg/sec | Total: 11984 messages
+2026-05-12 16:13:41,147 - __main__ - INFO - Rate: 6.49 msg/sec | Total: 11988 messages
+2026-05-12 16:13:43,315 - __main__ - INFO - Rate: 0.60 msg/sec | Total: 2072 messages
+2026-05-12 16:13:45,675 - __main__ - INFO - Rate: 0.99 msg/sec | Total: 2078 messages
+2026-05-12 16:13:49,962 - __main__ - INFO - Rate: 6.43 msg/sec | Total: 12049 messages
+2026-05-12 16:13:51,212 - __main__ - INFO - Rate: 6.56 msg/sec | Total: 12054 messages
+2026-05-12 16:13:53,489 - __main__ - INFO - Rate: 1.28 msg/sec | Total: 2085 messages
+2026-05-12 16:13:55,828 - __main__ - INFO - Rate: 0.79 msg/sec | Total: 2086 messages
