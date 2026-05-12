@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+email_files/
+.agents
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+server_logger_env/
+env.bak/
+venv.bak/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.*.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+.ropeproject
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+
+# Database
+*.db
+*.sqlite3
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3-shm
+*.sqlite3-wal
+
+# pyenv
+.python-version
+
+# Type checkers and static analysis
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/

@@ -293,7 +293,7 @@ def main() -> None:
         st.write("") # Vertical spacing
         st.write("")
         if st.button("🚪 Logout", key="logout_top", use_container_width=True,type="primary"):
-            st.session_state.authenticated = False
+            st.session_state.clear()
             st.rerun()
     st.divider()
     broker_counts = get_message_count_by_broker()
@@ -743,6 +743,17 @@ def main() -> None:
         if selected_mac:
             st.divider()
             st.subheader("⚡ Quick Actions")
+            col1,col2 = st.columns([0.5,1])
+            with col1:
+                action_broker = st.selectbox(
+                        "Send via broker",
+                        options=["Auto (try all)"] + broker_names,
+                        key="broker_list",
+                        help="Publish Quick Actions through this broker.",
+                )
+
+            action_broker_arg = None if action_broker == "Auto (try all)" else action_broker
+
             publish_topic = f"flosenso&{selected_mac}"
             if (
                 st.session_state.get("device_hist_qa_mac") == selected_mac
@@ -752,7 +763,7 @@ def main() -> None:
 
             st.markdown(
                 f"<div style='margin-top:8px'>📡 Publishing to: <b>{publish_topic}</b> · "
-                f"Broker: <b>{selected_broker}</b></div>",
+                f"Broker: <b>{action_broker}</b></div>",
                 unsafe_allow_html=True,
             )
 
@@ -783,7 +794,7 @@ def main() -> None:
                             use_container_width=True,
                         ):
                             ok, used = publish_message(
-                                publish_topic, cmd, broker_name=broker_arg
+                                publish_topic, cmd, broker_name=action_broker_arg
                             )
                             if ok:
                                 st.success(f"✅ `{cmd}` sent via **{used}**")
@@ -809,7 +820,7 @@ def main() -> None:
                         ok, used = publish_message(
                             publish_topic,
                             custom_msg.strip(),
-                            broker_name=broker_arg,
+                            broker_name=action_broker_arg,
                         )
                         if ok:
                             st.success(f"✅ `{custom_msg.strip()}` sent via **{used}**")
