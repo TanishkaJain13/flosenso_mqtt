@@ -12,11 +12,15 @@ from queue import Queue
 from database import init_db
 from utils import extract_mac_from_topic, normalise_mac, utc_now_str
 
+# Clear existing handlers to prevent duplicates if app.py is reloaded or run via Streamlit
+root = logging.getLogger()
+for handler in root.handlers[:]:
+    root.removeHandler(handler)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('hivemq_service.log'),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -52,7 +56,7 @@ class HiveMQService:
         self.total_messages = 0
         self.last_stats_time = time.time()
         self.messages_since_last_stats = 0
-        self._init_database()
+        # REMOVED self._init_database() - should be called once in main()
         
     def _init_database(self):
         try:
@@ -63,7 +67,7 @@ class HiveMQService:
             raise
     
     def _database_worker(self):
-        conn = sqlite3.connect(self.db_path)
+        conn = sqlite3.connect(self.db_path, timeout=30)
         conn.execute('PRAGMA journal_mode=WAL')
         conn.execute('PRAGMA synchronous=NORMAL')
         cursor = conn.cursor()
@@ -92,7 +96,7 @@ class HiveMQService:
                 current_time = time.time()
                 if current_time - self.last_stats_time >= 10:
                     rate = self.messages_since_last_stats / (current_time - self.last_stats_time)
-                    logger.info(f"Rate: {rate:.2f} msg/sec | Total: {self.total_messages} messages")
+                    logger.debug(f"Rate: {rate:.2f} msg/sec | Total: {self.total_messages} messages")
                     self.last_stats_time = current_time
                     self.messages_since_last_stats = 0
             except Exception as e:
@@ -132,7 +136,7 @@ class HiveMQService:
             }
             logger.error(f"Connection failed: {error_messages.get(rc, f'Unknown error code: {rc}')}")
     
-    def on_disconnect(self, client, userdata, rc, properties=None):
+    def on_disconnect(self, client, userdata, flags, rc, properties=None):
         if rc != 0:
             logger.warning(f"Unexpected disconnection (code: {rc}). Will attempt to reconnect...")
         else:
@@ -264,6 +268,14 @@ def main():
     logger.info("HiveMQ Service Starting (Dual-Broker mode)")
     logger.info("=" * 60)
     
+    # Initialize database once before starting threads
+    try:
+        init_db("mqtt_data.db")
+        logger.info("Database initialised successfully")
+    except Exception as e:
+        logger.error(f"Failed to initialise database: {e}")
+        sys.exit(1)
+
     threads = []
     for broker in BROKERS:
         t = Thread(target=start_service, args=(broker,), daemon=True)

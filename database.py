@@ -48,9 +48,10 @@ def get_connection(db_path: str = DB_PATH) -> sqlite3.Connection:
     if conn is None:
         conn = sqlite3.connect(db_path, check_same_thread=False)
         conn.row_factory = sqlite3.Row          # dict-like row access
-        conn.execute("PRAGMA journal_mode=WAL") # WAL for concurrent reads
+        conn.execute("PRAGMA journal_mode=WAL")
         conn.execute("PRAGMA synchronous=NORMAL")
-        conn.execute("PRAGMA cache_size=-64000") # 64 MB page cache
+        conn.execute("PRAGMA busy_timeout=30000") # 30 seconds
+        conn.execute("PRAGMA cache_size=-64000")
         conn.execute("PRAGMA temp_store=MEMORY")
         _local.connection = conn
         logger.debug("Opened new SQLite connection for thread %s", threading.current_thread().name)
@@ -123,6 +124,7 @@ DDL_INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_users_mac_id       ON users (mac_id);",
     "CREATE INDEX IF NOT EXISTS idx_customers_customer ON customers (customer_id);",
     "CREATE INDEX IF NOT EXISTS idx_customers_mac      ON customers (mac_id);",
+    "CREATE INDEX IF NOT EXISTS idx_messages_payload  ON mqtt_messages (payload);",
 ]
 
 
@@ -153,14 +155,17 @@ def init_db(db_path: str = DB_PATH) -> None:
     """
     with sqlite3.connect(db_path, check_same_thread=False) as conn:
         conn.execute("PRAGMA journal_mode=WAL")
-        conn.execute("PRAGMA busy_timeout=5000")
+        conn.execute("PRAGMA busy_timeout=30000")
         conn.execute(DDL_USERS)
         conn.execute(DDL_MQTT_MESSAGES)
         conn.execute(DDL_CUSTOMERS)
         conn.execute(DDL_ADMINS)
         _migrate_mqtt_messages_received_at(conn)
         for idx_ddl in DDL_INDEXES:
-            conn.execute(idx_ddl)
+            try:
+                conn.execute(idx_ddl)
+            except sqlite3.OperationalError:
+                pass # Already exists or other non-fatal error
 
         # Ensure admin accounts exist
         import hashlib
@@ -177,21 +182,27 @@ def init_db(db_path: str = DB_PATH) -> None:
             cc_h = hashlib.sha256("flosenso@cc123".encode()).hexdigest()
             conn.execute("INSERT INTO admins (username, password_hash) VALUES (?, ?)", (cc_user, cc_h))
             logger.info("Created flosenso cc admin account")
-    logger.info("Database initialised at %s", db_path)
+    logger.debug("Database initialised at %s", db_path)
     try:
-        with sqlite3.connect(db_path, check_same_thread=False) as conn:
-            has_flosenso = conn.execute(
-                "SELECT 1 FROM mqtt_messages WHERE topic LIKE 'flosenso&%' LIMIT 1"
-            ).fetchone()
+        # Use a short-lived connection just to check for data
+        conn = sqlite3.connect(db_path, check_same_thread=False, timeout=30)
+        conn.execute("PRAGMA journal_mode=WAL")
+        has_flosenso = conn.execute(
+            "SELECT 1 FROM mqtt_messages WHERE topic LIKE 'flosenso&%' LIMIT 1"
+        ).fetchone()
+        conn.close()
+        
         if has_flosenso:
             n_src = backfill_customers_from_mqtt_topics(db_path)
             logger.debug(
-                "Synced customers from MQTT topics (%d distinct topic rows; "
-                "existing pairs skipped).",
+                "Synced customers from MQTT topics (%d distinct topic rows).",
                 n_src,
             )
     except Exception as exc:
-        logger.warning("customers backfill on init: %s", exc)
+        if "locked" in str(exc).lower():
+            logger.warning("Database locked during backfill - skipping. It will sync during message ingestion.")
+        else:
+            logger.warning("customers backfill on init: %s", exc)
 
 
 # ─────────────────────────────────────────────
@@ -439,6 +450,59 @@ def list_distinct_mac_ids_from_mqtt_messages(db_path: str = DB_PATH) -> list[str
     return sorted({normalise_mac(m) for m in raw})
 
 
+def list_distinct_payloads(db_path: str = DB_PATH) -> list[str]:
+    """Return all unique payloads from mqtt_messages."""
+    conn = get_connection(db_path)
+    rows = conn.execute(
+        """
+        SELECT DISTINCT payload
+        FROM   mqtt_messages
+        WHERE  payload IS NOT NULL AND payload != ''
+        ORDER  BY payload
+        """
+    ).fetchall()
+    return [r["payload"] for r in rows]
+
+
+def get_device_info_for_payload(payload: str, db_path: str = DB_PATH) -> list[dict]:
+    """
+    Find all (mac_id, customer_id) pairs associated with a specific payload.
+    Extracts customer_id from topic if available.
+    """
+    conn = get_connection(db_path)
+    rows = conn.execute(
+        """
+        SELECT DISTINCT mac_id, topic
+        FROM   mqtt_messages
+        WHERE  payload = ?
+        """,
+        (payload,),
+    ).fetchall()
+    
+    results = []
+    seen = set()
+    for r in rows:
+        mac = normalise_mac(r["mac_id"] or "")
+        topic = (r["topic"] or "").strip()
+        
+        # Resolve customer ID from topic or database
+        parts = topic.split("&")
+        cust_id = "Unknown"
+        if len(parts) == 3 and parts[0].lower() == "flosenso":
+            cust_id = parts[2].strip()
+        else:
+            # Fallback to database lookup for MAC
+            resolved = resolve_flosenso_customer_id_for_mac(mac, db_path)
+            if resolved:
+                cust_id = resolved
+        
+        pair = (mac, cust_id)
+        if pair not in seen:
+            results.append({"mac_id": mac, "customer_id": cust_id})
+            seen.add(pair)
+    return results
+
+
 def list_customer_ids_from_customers(db_path: str = DB_PATH) -> list[str]:
     """Distinct ``customer_id`` values from ``customers``, sorted."""
     with sqlite3.connect(db_path, check_same_thread=False) as conn:
@@ -482,7 +546,7 @@ def insert_customer_pair(
         return {"success": False, "error": "Customer ID cannot be empty."}
     if not mid:
         return {"success": False, "error": "MAC ID cannot be empty."}
-    with sqlite3.connect(db_path, check_same_thread=False) as conn:
+    with sqlite3.connect(db_path, check_same_thread=False, timeout=30) as conn:
         conn.execute("PRAGMA journal_mode=WAL")
         cur = conn.execute(
             "INSERT OR IGNORE INTO customers (customer_id, mac_id, timestamp, received_at) VALUES (?, ?,?,?)",
@@ -525,7 +589,7 @@ def sync_customers_from_flosenso_message_batch(
             pairs.add((cid, mid))
     if not pairs:
         return
-    with sqlite3.connect(db_path, check_same_thread=False) as conn:
+    with sqlite3.connect(db_path, check_same_thread=False, timeout=30) as conn:
         conn.execute("PRAGMA journal_mode=WAL")
         conn.executemany(
             "INSERT OR IGNORE INTO customers (customer_id, mac_id) VALUES (?, ?)",
@@ -542,7 +606,8 @@ def backfill_customers_from_mqtt_topics(db_path: str = DB_PATH) -> int:
     Returns:
         Number of distinct (topic, mac_id) source rows fed into the sync.
     """
-    with sqlite3.connect(db_path, check_same_thread=False) as conn:
+    with sqlite3.connect(db_path, check_same_thread=False, timeout=30) as conn:
+        conn.execute("PRAGMA journal_mode=WAL")
         conn.row_factory = sqlite3.Row
         rows = conn.execute(
             """
@@ -599,8 +664,8 @@ def cleanup_old_data(days: int = 30, db_path: str = DB_PATH) -> int:
             )
             
         if deleted_count > 0:
-            logger.info("Data Retention: Deleted %d messages older than %d days (cutoff: %s)", 
-                        deleted_count, days, cutoff)
+            logger.debug("Data Retention: Deleted %d messages older than %d days (cutoff: %s)", 
+                         deleted_count, days, cutoff)
     except Exception as exc:
         logger.error("Data Retention: Cleanup failed: %s", exc)
         
@@ -728,16 +793,17 @@ def resolve_flosenso_customer_id_for_mac(
 
 
 def get_messages_for_device(
-    mac_id: str,
+    mac_id: Optional[str] = None,
     hours: Optional[int] = None,
     limit: int = 50000,
     db_path: str = DB_PATH,
     start_date: Optional[date] = None,
     end_date: Optional[date] = None,
     broker_name: Optional[str] = None,
+    payload_search: Optional[str] = None,
 ) -> list[dict]:
     """
-    Return messages for a specific MAC ID, optionally filtered by a time window.
+    Return messages optionally filtered by MAC ID, time window, broker, and/or payload.
 
     Args:
         mac_id:  MAC as shown in the UI (matched flexibly against ``mac_id`` / topic).
@@ -747,67 +813,53 @@ def get_messages_for_device(
         start_date, end_date: If both set, filter ``DATE(timestamp)`` to this inclusive range
                  (takes precedence over ``hours``).
         broker_name: If set, only rows for this broker (e.g. ``Broker-1``).
+        payload_search: If set, only return messages with this exact payload.
     """
     conn = get_connection(db_path)
-    variants = _mac_lookup_variants(mac_id)
-    if not variants:
-        return []
-
-    ph = ",".join("?" * len(variants))
-    topic_clauses = " OR ".join(["LOWER(topic) LIKE LOWER(?)" for _ in variants])
-    where_mac = f"(TRIM(mac_id) IN ({ph}) OR {topic_clauses})"
-    mac_params: list = list(variants)
-    mac_params.extend(f"flosenso&{v}&%" for v in variants)
-
-    broker_clause = ""
+    
+    where_clauses = []
+    params = []
+    
+    if mac_id:
+        variants = _mac_lookup_variants(mac_id)
+        if variants:
+            ph = ",".join("?" * len(variants))
+            topic_clauses = " OR ".join(["LOWER(topic) LIKE LOWER(?)" for _ in variants])
+            where_clauses.append(f"(TRIM(mac_id) IN ({ph}) OR {topic_clauses})")
+            params.extend(variants)
+            params.extend(f"flosenso&{v}&%" for v in variants)
+            
     if broker_name:
-        broker_clause = " AND broker_name = ?"
-
+        where_clauses.append("broker_name = ?")
+        params.append(broker_name)
+        
+    if payload_search:
+        where_clauses.append("payload = ?")
+        params.append(payload_search)
+        
     if start_date is not None and end_date is not None:
-        sql = f"""
-            SELECT broker_name, topic, mac_id, payload, qos, retain, timestamp, received_at
-            FROM   mqtt_messages
-            WHERE  {where_mac}
-              AND  date(timestamp) BETWEEN date(?) AND date(?)
-              {broker_clause}
-            ORDER  BY timestamp DESC
-            LIMIT  ?
-        """
-        params: tuple = (*mac_params, str(start_date), str(end_date))
-        if broker_name:
-            params = (*params, broker_name)
-        rows = conn.execute(sql, (*params, limit)).fetchall()
+        where_clauses.append("date(timestamp) BETWEEN date(?) AND date(?)")
+        params.extend([str(start_date), str(end_date)])
     elif hours is not None:
         cutoff = (datetime.now(_IST) - timedelta(hours=hours)).strftime(
             "%Y-%m-%d %H:%M:%S"
         )
-        sql = f"""
-            SELECT broker_name, topic, mac_id, payload, qos, retain, timestamp, received_at
-            FROM   mqtt_messages
-            WHERE  {where_mac}
-              AND  timestamp >= ?
-              {broker_clause}
-            ORDER  BY timestamp DESC
-            LIMIT  ?
-        """
-        params = (*mac_params, cutoff)
-        if broker_name:
-            params = (*params, broker_name)
-        rows = conn.execute(sql, (*params, limit)).fetchall()
-    else:
-        sql = f"""
-            SELECT broker_name, topic, mac_id, payload, qos, retain, timestamp, received_at
-            FROM   mqtt_messages
-            WHERE  {where_mac}
-              {broker_clause}
-            ORDER  BY timestamp DESC
-            LIMIT  ?
-        """
-        params = tuple(mac_params)
-        if broker_name:
-            params = (*params, broker_name)
-        rows = conn.execute(sql, (*params, limit)).fetchall()
-
+        where_clauses.append("timestamp >= ?")
+        params.append(cutoff)
+        
+    where_str = ""
+    if where_clauses:
+        where_str = "WHERE " + " AND ".join(where_clauses)
+        
+    sql = f"""
+        SELECT broker_name, topic, mac_id, payload, qos, retain, timestamp, received_at
+        FROM   mqtt_messages
+        {where_str}
+        ORDER  BY timestamp DESC
+        LIMIT  ?
+    """
+    params.append(limit)
+    rows = conn.execute(sql, tuple(params)).fetchall()
     return [dict(r) for r in rows]
 
 

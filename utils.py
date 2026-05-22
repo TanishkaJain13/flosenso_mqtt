@@ -32,14 +32,29 @@ logger = logging.getLogger(__name__)
 def setup_logging(level: int = logging.INFO, log_file: str | None = None) -> None:
     """
     Configure root logger with a consistent format.
-    Optionally mirror output to a file.
+    Optionally mirror output to a rotating file (10MB limit, 5 backups).
     """
+    import logging.handlers
+    
     fmt = "%(asctime)s  %(levelname)-8s  %(name)s  %(message)s"
     datefmt = "%Y-%m-%d %H:%M:%S"
 
+    # Clear existing handlers to prevent duplicate logger configurations on reload/import
+    root = logging.getLogger()
+    for handler in root.handlers[:]:
+        root.removeHandler(handler)
+
     handlers: list[logging.Handler] = [logging.StreamHandler()]
     if log_file:
-        handlers.append(logging.FileHandler(log_file))
+        # Use RotatingFileHandler instead of FileHandler to prevent endless log growth
+        handlers.append(
+            logging.handlers.RotatingFileHandler(
+                log_file,
+                maxBytes=10 * 1024 * 1024, # 10 MB
+                backupCount=5,
+                encoding="utf-8"
+            )
+        )
 
     logging.basicConfig(level=level, format=fmt, datefmt=datefmt, handlers=handlers)
 

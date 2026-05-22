@@ -31,7 +31,7 @@ from utils import extract_mac_from_topic, normalise_mac, utc_now_str, setup_logg
 # ─────────────────────────────────────────────
 # Logging
 # ─────────────────────────────────────────────
-setup_logging(level=logging.INFO, log_file="mqtt_service.log")
+# setup_logging is now called within main() to prevent import side-effects
 logger = logging.getLogger(__name__)
 
 
@@ -261,8 +261,8 @@ def _writer_thread() -> None:
         if should_flush:
             try:
                 inserted = batch_insert_messages(buffer)
-                logger.info("Flushed %d messages to DB (queue depth: %d)",
-                            inserted, message_queue.qsize())
+                logger.debug("Flushed %d messages to DB (queue depth: %d)",
+                             inserted, message_queue.qsize())
             except Exception as exc:
                 logger.error("Batch insert failed: %s", exc, exc_info=True)
             finally:
@@ -307,6 +307,7 @@ def _handle_signal(signum, frame):
 # Entry point
 # ─────────────────────────────────────────────
 def main() -> None:
+    setup_logging(level=logging.INFO)
     logger.info("=" * 60)
     logger.info("  Flosenso MQTT Ingestion Service  (dual-broker)")
     logger.info("=" * 60)

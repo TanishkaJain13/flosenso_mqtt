@@ -36,12 +36,14 @@ from database import (
     get_messages_for_device,
     get_username_for_mac,
     init_db,
-    list_customer_ids_from_flosenso_topics,
+    list_customer_ids_from_customers,
     list_distinct_mac_ids_from_mqtt_messages,
-    list_mac_ids_for_flosenso_customer,
+    list_mac_ids_for_customer_from_customers,
     resolve_flosenso_customer_id_for_mac,
     get_registered_mac_ids,
     verify_admin_login,
+    list_distinct_payloads,
+    get_device_info_for_payload,
 )
 from mqtt_service import BROKERS
 from utils import setup_logging
@@ -82,14 +84,20 @@ def load_report_config():
     return cfg
 
 
+@st.cache_resource
+def cached_init_db(db_path: str) -> None:
+    """Cache database initialization to avoid checking migrations on every reload."""
+    init_db(db_path)
+
+
 @st.cache_data
 def cached_flosenso_customer_ids(db_path: str) -> tuple[str, ...]:
-    return tuple(list_customer_ids_from_flosenso_topics(db_path))
+    return tuple(list_customer_ids_from_customers(db_path))
 
 
 @st.cache_data
 def cached_flosenso_macs_for_customer(db_path: str, customer_id: str) -> tuple[str, ...]:
-    return tuple(list_mac_ids_for_flosenso_customer(customer_id, db_path))
+    return tuple(list_mac_ids_for_customer_from_customers(customer_id, db_path))
 
 
 @st.cache_data(ttl=120, show_spinner=False)
@@ -100,6 +108,11 @@ def cached_distinct_mqtt_macs(db_path: str) -> tuple[str, ...]:
 @st.cache_data(ttl=60, show_spinner=False)
 def cached_resolve_flosenso_customer_for_mac(db_path: str, mac_id: str) -> str | None:
     return resolve_flosenso_customer_id_for_mac(mac_id, db_path)
+
+
+@st.cache_data(ttl=120, show_spinner=False)
+def cached_distinct_payloads(db_path: str) -> tuple[str, ...]:
+    return tuple(list_distinct_payloads(db_path))
 
 
 @st.cache_data(ttl=120, show_spinner=False)
@@ -195,7 +208,8 @@ def publish_message(
 
 
 def main() -> None:
-    setup_logging()
+    import logging
+    setup_logging(level=logging.WARNING)
 
     st.set_page_config(
         page_title="Flosenso MQTT Dashboard",
@@ -207,26 +221,71 @@ def main() -> None:
     if "authenticated" not in st.session_state:
         st.session_state.authenticated = False
 
+    # Initialize all widget state keys to prevent callback AttributeErrors on rerun
+    widget_defaults = {
+        "viewer_user": "Select the ID",
+        "viewer_mac": "Select the ID",
+        "viewer_mqtt_customer": "Select the Customer ID",
+        "viewer_mac_mqtt": "Select the MAC ID",
+        "viewer_mac_only": "Select the MAC ID"
+    }
+    for key, val in widget_defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = val
+
     if not st.session_state.authenticated:
-        # Custom CSS for login page
+        # Custom CSS for light mode login page
         st.markdown(
             """
             <style>
+                /* App background */
                 .stApp {
-                    background: #0e1117;
+                    background: #f8fafc;
                 }
-                .login-container {
-                    max-width: 400px;
-                    margin: 100px auto;
-                    padding: 2rem;
-                    background: #1e1e2e;
-                    border-radius: 12px;
-                    border: 1px solid #313244;
-                    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+                /* Hide Streamlit header, deploy button, and main menu */
+                header {
+                    visibility: hidden !important;
+                    display: none !important;
                 }
+                #MainMenu {
+                    visibility: hidden !important;
+                    display: none !important;
+                }
+                div[data-testid="stDeployButton"] {
+                    visibility: hidden !important;
+                    display: none !important;
+                }
+                /* Login Form container styling */
+                div[data-testid="stForm"] {
+                    background-color: #ffffff !important;
+                    border: 1px solid #e2e8f0 !important;
+                    border-radius: 16px !important;
+                    padding: 2.5rem !important;
+                    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+                }
+                /* Form labels */
+                div[data-testid="stForm"] label {
+                    color: #334155 !important;
+                    font-weight: 600 !important;
+                }
+                /* Text Input Fields */
                 .stTextInput > div > div > input {
-                    background-color: #313244 !important;
-                    color: #cdd6f4 !important;
+                    background-color: #ffffff !important;
+                    color: #0f172a !important;
+                    caret-color: #0f172a !important;
+                    border: 1px solid #cbd5e1 !important;
+                    border-radius: 8px !important;
+                }
+                .stTextInput > div > div > input:focus {
+                    border-color: #3b82f6 !important;
+                    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+                }
+                /* Subheader custom styling */
+                div[data-testid="stForm"] h3 {
+                    color: #0f172a !important;
+                    font-size: 1.5rem !important;
+                    font-weight: 700 !important;
+                    margin-bottom: 1.5rem !important;
                 }
             </style>
             """,
@@ -239,8 +298,8 @@ def main() -> None:
             st.markdown(
                 """
                 <div style='text-align: center; margin-bottom: 2rem;'>
-                    <h1 style='color: #cdd6f4; font-size: 2.5rem; margin-bottom: 0.5rem;'>📡 Flosenso</h1>
-                    <p style='color: #a6adc8; font-size: 1.1rem;'>Server Management Dashboard</p>
+                    <h1 style='color: #0f172a; font-size: 2.5rem; margin-bottom: 0.5rem;'>📡 Flosenso</h1>
+                    <p style='color: #64748b; font-size: 1.1rem;'>Server Management Dashboard</p>
                 </div>
                 """, 
                 unsafe_allow_html=True
@@ -256,7 +315,7 @@ def main() -> None:
                     cfg = load_report_config()
                     db_path = cfg["database"]["path"] if cfg else DB_PATH
                     # Ensure DB is initialized to create default admin if needed
-                    init_db(db_path)
+                    cached_init_db(db_path)
                     
                     if verify_admin_login(username, password, db_path):
                         st.session_state.authenticated = True
@@ -312,175 +371,12 @@ def main() -> None:
     else:
         
         db_path = cfg["database"]["path"]
-        init_db(db_path)
+        cached_init_db(db_path)
         if "selected_customer" not in st.session_state:
             st.session_state.selected_customer = None
         if "selected_mac" not in st.session_state:
             st.session_state.selected_mac = None
-        # col1, col2 = st.columns(2)
-        # usernames_tab1 = get_all_usernames(db_path)
-        # selected_customer: str | None = None
-        # selected_mac_r: str | None = None
-
-        # if usernames_tab1:
-        #     with col1:
-        #         selected_user_tab1 = st.selectbox(
-        #             "Customer ID",
-        #             options=usernames_tab1,
-        #             key="view_user_tab1",
-        #         )
-        #     mac_opts_tab1 = get_mac_ids_for_user(selected_user_tab1, db_path)
-        #     with col2:
-        #         if mac_opts_tab1:
-        #             default_idx = 0
-        #             if st.session_state.selected_mac and st.session_state.selected_mac in mac_opts_tab1:
-        #                 default_idx = mac_opts_tab1.index(st.session_state.selected_mac)
-        #             selected_mac_r = st.selectbox(
-        #                 "Select MAC ID",
-        #                 mac_opts_tab1,
-        #                 index=default_idx,
-        #                 key="view_mac",
-        #             )
-        #             st.session_state.selected_mac = selected_mac_r
-        #             resolved_c = cached_resolve_flosenso_customer_for_mac(
-        #                 db_path, selected_mac_r
-        #             )
-        #             if resolved_c:
-        #                 selected_customer = resolved_c
-        #                 st.session_state.selected_customer = resolved_c
-        #                 st.caption(f"MQTT customer segment (resolved): **{resolved_c}**")
-        #             else:
-        #                 st.session_state.selected_customer = None
-        #                 st.warning(
-        #                     "No **customer_id** found for this MAC — register traffic on "
-        #                     "`flosenso&<mac>&<customer>` or wait for **customers** sync."
-        #                 )
-        #         else:
-        #             st.info("No MAC IDs registered for this user in **users**.")
-        #             st.session_state.selected_mac = None
-        #             st.session_state.selected_customer = None
-        # else:
-        #     with col1:
-        #         customer_ids = list(cached_flosenso_customer_ids(db_path))
-        #         if customer_ids:
-        #             default_idx = 0
-        #             if (
-        #                 st.session_state.selected_customer
-        #                 and st.session_state.selected_customer in customer_ids
-        #             ):
-        #                 default_idx = customer_ids.index(st.session_state.selected_customer)
-        #             selected_customer = st.selectbox(
-        #                 "Select Customer ID",
-        #                 customer_ids,
-        #                 index=default_idx,
-        #                 key="view_customer",
-        #             )
-        #             st.session_state.selected_customer = selected_customer
-        #         else:
-        #             st.info(
-        #                 "No **customer_id** values yet. Publish on "
-        #                 "`flosenso&<mac_id>&<customer_id>` (the MQTT service stores these "
-        #                 "without pre-registering the MAC), or add rows to **users** to pick "
-        #                 "username / MAC from the allow-list."
-        #             )
-        #             selected_customer = None
-        #     with col2:
-        #         if selected_customer:
-        #             mac_ids_r = list(
-        #                 cached_flosenso_macs_for_customer(db_path, selected_customer)
-        #             )
-        #             if mac_ids_r:
-        #                 default_idx = 0
-        #                 if st.session_state.selected_mac and st.session_state.selected_mac in mac_ids_r:
-        #                     default_idx = mac_ids_r.index(st.session_state.selected_mac)
-        #                 selected_mac_r = st.selectbox(
-        #                     "Select MAC ID",
-        #                     mac_ids_r,
-        #                     index=default_idx,
-        #                     key="view_mac",
-        #                 )
-        #                 st.session_state.selected_mac = selected_mac_r
-        #             else:
-        #                 st.info(
-        #                     "No **mac_id** values for this customer — check `mqtt_messages` "
-        #                     "rows where `topic` matches `flosenso&…&` + customer."
-        #                 )
-        #                 selected_mac_r = None
-        #         else:
-        #             selected_mac_r = None
-        # if selected_customer and selected_mac_r:
-        #     st.divider()
-        #     load_data = st.button("🔍 Load Data", key="load_btn", use_container_width=True)
-        #     if load_data:
-        #         cached_flosenso_customer_ids.clear()
-        #         cached_flosenso_macs_for_customer.clear()
-        #         cached_resolve_flosenso_customer_for_mac.clear()
-        #         df_r = get_report_messages_data(
-        #             db_path, selected_customer, selected_mac_r, None, None
-        #         )
-        #         if not df_r.empty:
-        #             st.success(f"Found {len(df_r)} messages")
-        #             df_r["timestamp"] = pd.to_datetime(df_r["timestamp"], errors="coerce")
-        #             df_r["Time stamp"] = df_r["timestamp"].dt.strftime("%d-%b-%Y %I:%M %p")
-        #             df_r = df_r.drop(columns=["timestamp", "received_at"])
-        #             st.session_state.df_loaded = df_r
-        #         else:
-        #             st.info("No messages found for this combination")
-        #             st.session_state.df_loaded = None
-        #     if "df_loaded" in st.session_state and st.session_state.df_loaded is not None:
-        #         st.dataframe(st.session_state.df_loaded, use_container_width=True, height=400)
-        #         csv_r = st.session_state.df_loaded.to_csv(index=False)
-        #         st.download_button(
-        #             label="📥 Download CSV",
-        #             data=csv_r,
-        #             file_name=(
-        #                 f"mqtt_data_{selected_mac_r}_{selected_customer}_all_time.csv"
-        #             ),
-        #             mime="text/csv",
-        #         )
-        #     st.divider()
-            # topic_r = f"flosenso&{selected_mac_r}&{selected_customer}"
-            
-            # st.info(f"📡 Publishing to: **{topic_r}**")
-            # st.subheader("Quick Actions")
-            # commands = [
-            #     ("🔵 GET_STATUS", "app200req"),
-            #     ("📶 GET_WIFI_STRENGTH", "app308"),
-            #     ("📏 CHECK_DISTANCE", "app301&T"),
-            #     ("⚙️ GET_SETTINGS", "app300"),
-            #     ("📅 GET_SCHEDULES", "app204getsdl"),
-            #     ("🔁 RESTART_DEVICE", "app302"),
-            #     ("🔄 RESET_LORA", "app304"),
-            #     ("🔌 FORCE_MOTOR_ON", "app210&MO&05"),
-            #     ("⛔ FORCE_MOTOR_OFF", "app210&MF"),
-            # ]
-            # cols_btn = st.columns(5)
-            # i = 0
-            # for label, cmd in commands:
-            #     with cols_btn[i % 5]:
-            #         if st.button(label, key=f"btn_{i}", use_container_width=True):
-            #             if publish_message_via_config(cfg, topic_r, cmd):
-            #                 st.success("✅ Sent!")
-            #             else:
-            #                 st.error("❌ Failed")
-            #     i += 1
-            #     if i % 5 == 0:
-            #         cols_btn = st.columns(5)
-            # st.write("")
-            # col_a, col_b = st.columns([3, 1])
-            # with col_a:
-            #     custom_message = st.text_input("Enter custom message", key="custom_msg_tab1")
-            # with col_b:
-            #     st.write("")
-            #     st.write("")
-            #     if st.button("📤 Send Custom", key="send_custom_tab1", use_container_width=True):
-            #         if custom_message:
-            #             if publish_message_via_config(cfg, topic_r, custom_message):
-            #                 st.success("✅ Sent!")
-            #             else:
-            #                 st.error("❌ Failed")
-            #         else:
-            #             st.warning("Enter message")
+     
     st.divider()
 
     st.subheader("Device Message History")
@@ -518,14 +414,42 @@ def main() -> None:
             st.session_state.device_hist_empty_mac = None
             st.session_state.device_hist_metrics = None
 
-        sel_col1, sel_col2, sel_col3, sel_col4, sel_col5 = st.columns([1, 1, 1, 1, 1])
+        sel_col1, sel_col2, sel_col3, sel_col4, sel_col5, sel_col6 = st.columns([1, 1, 1, 1, 1, 1])
         selected_mac: str | None = None
 
+        # # --- 1. Payload Filter (Primary) ---
+        # with sel_col5:
+        #     db_for_payload = cfg["database"]["path"] if cfg else DB_PATH
+        #     all_payloads = cached_distinct_payloads(db_for_payload)
+            
+        #     selected_payload = st.selectbox(
+        #         "Search Payload",
+        #         options=["Search Payload"] + list(all_payloads),
+        #         key="payload_search_box"
+        #     )
+            
+        #     payload_macs = None
+        #     payload_custs = None
+        #     if selected_payload != "Search Payload":
+        #         device_info = get_device_info_for_payload(selected_payload, db_for_payload)
+        #         if device_info:
+        #             payload_macs = {d["mac_id"] for d in device_info}
+        #             payload_custs = {d["customer_id"] for d in device_info}
+        payload_macs = None
+        payload_custs = None
+        selected_payload = None
+
+        # --- 2. Customer & MAC ID Selection ---
         if viewer_source == "registered":
             all_reg_macs = sorted(list(get_registered_mac_ids(db_for_viewer)))
             
+            # Filter registered users/macs by payload results if applicable
+            reg_usernames = list(usernames_reg)
+            if payload_custs:
+                reg_usernames = [u for u in reg_usernames if u in payload_custs]
+            
             def on_viewer_mac_change():
-                new_mac = st.session_state.viewer_mac
+                new_mac = st.session_state.get("viewer_mac")
                 if new_mac and new_mac != "Select the ID":
                     u = get_username_for_mac(new_mac, db_for_viewer)
                     if u:
@@ -534,15 +458,21 @@ def main() -> None:
             with sel_col1:
                 selected_user = st.selectbox(
                     "Customer ID",
-                    options=["Select the ID"] + list(usernames_reg),
+                    options=["Select the ID"] + reg_usernames,
                     key="viewer_user",
                 )
             
             mac_options = ["Select the ID"]
-            if selected_user != "Select the ID":
-                mac_options += list(get_mac_ids_for_user(selected_user, db_for_viewer))
+            if selected_user and selected_user != "Select the ID":
+                available_macs = list(get_mac_ids_for_user(selected_user, db_for_viewer))
+                if payload_macs:
+                    available_macs = [m for m in available_macs if m in payload_macs]
+                mac_options += available_macs
             else:
-                mac_options += all_reg_macs
+                available_macs = all_reg_macs
+                if payload_macs:
+                    available_macs = [m for m in available_macs if m in payload_macs]
+                mac_options += available_macs
 
             with sel_col2:
                 selected_mac = st.selectbox(
@@ -557,8 +487,13 @@ def main() -> None:
                 _cust_key, db_for_viewer
             )
             
+            # Filter mqtt customers by payload results if applicable
+            available_customers = list(mqtt_customers)
+            # if payload_custs:
+            #     available_customers = [c for c in available_customers if c in payload_custs]
+
             def on_viewer_mac_mqtt_change():
-                new_mac = st.session_state.viewer_mac_mqtt
+                new_mac = st.session_state.get("viewer_mac_mqtt")
                 if new_mac and new_mac != "Select the MAC ID":
                     c = resolve_flosenso_customer_id_for_mac(new_mac, db_for_viewer)
                     if c:
@@ -567,17 +502,21 @@ def main() -> None:
             with sel_col1:
                 selected_username_mqtt = st.selectbox(
                     "Customer ID",
-                    options=["Select the Customer ID"] + list(mqtt_customers),
+                    options=["Select the Customer ID"] + available_customers,
                     key="viewer_mqtt_customer",
                     format_func=lambda c, lb=_mqtt_user_labels: lb.get(c, c),
                 )
             
             mac_options = ["Select the MAC ID"]
-            if selected_username_mqtt != "Select the Customer ID":
-                mac_options += list(cached_flosenso_macs_for_customer(db_for_viewer, selected_username_mqtt))
+            if selected_username_mqtt and selected_username_mqtt != "Select the Customer ID":
+                available_macs = list(cached_flosenso_macs_for_customer(db_for_viewer, selected_username_mqtt))
+                # if payload_macs:
+                #     available_macs = [m for m in available_macs if m in payload_macs]
+                mac_options += available_macs
             else:
-                # Show all MACs that have customer associations
                 all_mqtt_macs = sorted(list(cached_distinct_mqtt_macs(db_for_viewer)))
+                # if payload_macs:
+                #     all_mqtt_macs = [m for m in all_mqtt_macs if m in payload_macs]
                 mac_options += all_mqtt_macs
 
             with sel_col2:
@@ -588,13 +527,17 @@ def main() -> None:
                     on_change=on_viewer_mac_mqtt_change
                 )
         else:
+            available_mac_ids = list(mqtt_mac_ids)
+            if payload_macs:
+                available_mac_ids = [m for m in available_mac_ids if m in payload_macs]
+                
             with sel_col1:
                 selected_mac = st.selectbox(
                     "MAC ID (from MQTT)",
-                    options=["Select the MAC ID"] + list(mqtt_mac_ids),
+                    options=["Select the MAC ID"] + available_mac_ids,
                     key="viewer_mac_only",
                 )
-        
+
         if selected_mac in ["Select the MAC ID", "Select the ID"]:
             selected_mac = None
 
@@ -606,7 +549,7 @@ def main() -> None:
             )
         with sel_col4:
             hist_end = st.date_input("End Date", datetime.now(), key="viewer_hist_end")
-        
+
         broker_names = [b.name for b in BROKERS]
         qa_b_row1, qa_b_row2 = st.columns([0.5, 0.5])
         with qa_b_row1:
@@ -626,6 +569,10 @@ def main() -> None:
             )
             st.markdown("</div>", unsafe_allow_html=True)
 
+        payload_arg = None
+        if selected_payload and selected_payload != "Search Payload":
+            payload_arg = selected_payload
+
         broker_arg = None if selected_broker == "Auto (try all)" else selected_broker
 
         if device_hist_load:
@@ -633,9 +580,9 @@ def main() -> None:
             cached_flosenso_macs_for_customer.clear()
             cached_distinct_mqtt_macs.clear()
             cached_mqtt_customer_username_labels.clear()
-            if not selected_mac:
+            if not selected_mac and not payload_arg:
                 st.warning(
-                    "Select a MAC ID (or pick a user that has one), then click **Load Data**."
+                    "Select a MAC ID (or pick a user that has one), or select a Search Payload, then click **Load Data**."
                 )
             elif hist_start > hist_end:
                 st.warning("**Start Date** must be on or before **End Date**.")
@@ -646,6 +593,7 @@ def main() -> None:
                     start_date=hist_start,
                     end_date=hist_end,
                     broker_name=broker_arg,
+                    payload_search=payload_arg,
                 )
                 loaded_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 if not messages:
@@ -740,7 +688,14 @@ def main() -> None:
                 mime="text/csv",
             )
 
-        if selected_mac:
+        # Determine target_mac for Quick Actions
+        target_mac = selected_mac
+        if not target_mac and df_hist is not None and not df_hist.empty:
+            first_mac = df_hist.iloc[0].get("MAC ID")
+            if first_mac:
+                target_mac = first_mac
+
+        if target_mac:
             st.divider()
             st.subheader("⚡ Quick Actions")
             col1,col2 = st.columns([0.5,1])
@@ -754,9 +709,9 @@ def main() -> None:
 
             action_broker_arg = None if action_broker == "Auto (try all)" else action_broker
 
-            publish_topic = f"flosenso&{selected_mac}"
+            publish_topic = f"flosenso&{target_mac}"
             if (
-                st.session_state.get("device_hist_qa_mac") == selected_mac
+                st.session_state.get("device_hist_qa_mac") == target_mac
                 and st.session_state.get("device_hist_publish_topic")
             ):
                 publish_topic = st.session_state["device_hist_publish_topic"]
