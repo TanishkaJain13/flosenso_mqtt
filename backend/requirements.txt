@@ -1,9 +1,10 @@
 # ──────────────────────────────────────────────────
-# Flosenso MQTT Ingestion Service (mqtt_service.py)
+# Flosenso MQTT Dashboard — FastAPI backend
 # Python 3.11+
 # ──────────────────────────────────────────────────
-# MQTT client. SQLite is bundled with Python — no extra package needed.
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
 paho-mqtt>=2.0.0
 
-# The dashboard now lives in backend/ (FastAPI) and frontend/ (React).
-# See backend/requirements.txt for the API server dependencies.
+# Inherited from the project root (ingestion service / data layer):
+#   paho-mqtt, sqlite3 (stdlib)
