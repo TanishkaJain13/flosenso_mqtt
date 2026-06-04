@@ -271,7 +271,7 @@ def backfill_customers_from_mqtt_topics(db_path: str = DB_PATH) -> int:
 # ─────────────────────────────────────────────
 # Data retention / cleanup
 # ─────────────────────────────────────────────
-def cleanup_old_data(days: int = 30, db_path: str = DB_PATH) -> int:
+def cleanup_old_data(days: int = 60, db_path: str = DB_PATH) -> int:
     """
     Delete messages and customer associations older than ``days`` (IST wall clock).
     Throttled to run at most once per minute. Returns rows deleted from mqtt_messages.
@@ -325,7 +325,7 @@ def batch_insert_messages(messages: list[dict], db_path: str = DB_PATH) -> int:
     except Exception as exc:
         logger.warning("customers sync after mqtt insert: %s", exc)
 
-    cleanup_old_data(days=30, db_path=db_path)
+    cleanup_old_data(days=60, db_path=db_path)
     return len(messages)
 
 
