@@ -378,7 +378,9 @@ def query_messages_fast(
         params.append(payload_search)
 
     if start_date is not None and end_date is not None:
-        where.append("date(received_at) BETWEEN date(?) AND date(?)")
+        # Filter on ``timestamp`` (consistent IST across all rows) — not
+        # ``received_at``, which mixes IST (migrated rows) and UTC (new rows).
+        where.append("date(timestamp) BETWEEN date(?) AND date(?)")
         params.extend([str(start_date), str(end_date)])
 
     where_str = ("WHERE " + " AND ".join(where)) if where else ""
@@ -386,7 +388,7 @@ def query_messages_fast(
         SELECT broker_name, topic, mac_id, payload, qos, retain, timestamp, received_at
         FROM   mqtt_messages
         {where_str}
-        ORDER  BY received_at DESC
+        ORDER  BY timestamp DESC, id DESC
         LIMIT  ?
     """
     params.append(limit)
