@@ -50,14 +50,6 @@ except ImportError:
 # ─────────────────────────────────────────────
 DB_PATH = os.environ.get("FLOSENSO_DB_PATH", str(_ROOT / "mqtt_data.db"))
 
-# Comma-separated allowed origins for the browser app (Vite dev server default).
-_DEFAULT_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173"
-ALLOWED_ORIGINS = [
-    o.strip()
-    for o in os.environ.get("FLOSENSO_CORS_ORIGINS", _DEFAULT_ORIGINS).split(",")
-    if o.strip()
-]
-
 # Quick Action commands (mirrors the Streamlit dashboard).
 COMMANDS = [
     {"label": "🔵 GET_STATUS", "cmd": "app200req"},
@@ -75,8 +67,8 @@ app = FastAPI(title="Flosenso MQTT Dashboard API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

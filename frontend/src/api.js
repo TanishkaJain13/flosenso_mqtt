@@ -1,9 +1,13 @@
 // Tiny fetch wrapper around the FastAPI backend. No auth header: login is
 // handled entirely in the frontend (see auth.js); the API is open.
 
+// Dev: Vite proxies /api → backend (vite.config.js). Prod: direct URL.
+const API_BASE = import.meta.env.DEV ? "" : "http://3.7.113.12:8500";
+
 async function request(path, { method = "GET", body } = {}) {
   const headers = { "Content-Type": "application/json" };
-  const res = await fetch(`/api${path}`, {
+  const url = `${API_BASE}/api${path}`;
+  const res = await fetch(url, {
     method,
     headers,
     body: body ? JSON.stringify(body) : undefined,
