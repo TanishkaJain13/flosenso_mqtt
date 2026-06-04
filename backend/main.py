@@ -22,7 +22,7 @@ from __future__ import annotations
 
 import os
 import sys
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
 
@@ -182,6 +182,14 @@ def messages(
         limit=limit,
         db_path=DB_PATH,
     )
+    # Guarantee newest-first ordering in the response, independent of SQLite's
+    # ordering. ``timestamp`` is IST "YYYY-MM-DD HH:MM:SS"; unpar. values sort last.
+    def _ts_key(row):
+        try:
+            return datetime.strptime(row.get("timestamp") or "", "%Y-%m-%d %H:%M:%S")
+        except (ValueError, TypeError):
+            return datetime.min
+    rows.sort(key=_ts_key, reverse=True)
     return {"count": len(rows), "messages": rows}
 
 
