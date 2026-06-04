@@ -1,10 +1,9 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import { api } from "../api.js";
 import { CC_USER, CC_HIDDEN_COMMANDS } from "../auth.js";
+import SearchableSelect from "../components/SearchableSelect.jsx";
 
 const AUTO = "Auto (try all)";
-const PICK_CUSTOMER = "Select the Customer ID";
-const PICK_MAC = "Select the MAC ID";
 
 function isoDate(d) {
   return d.toISOString().slice(0, 10);
@@ -22,9 +21,9 @@ export default function Dashboard({ user, onLogout }) {
   const [brokerCounts, setBrokerCounts] = useState([]);
   const [commands, setCommands] = useState([]);
 
-  // Selectors
-  const [customer, setCustomer] = useState(PICK_CUSTOMER);
-  const [mac, setMac] = useState(PICK_MAC);
+  // Selectors ("" = nothing selected)
+  const [customer, setCustomer] = useState("");
+  const [mac, setMac] = useState("");
   const [startDate, setStartDate] = useState(isoDate(daysAgo(30)));
   const [endDate, setEndDate] = useState(isoDate(new Date()));
   const [loadBroker, setLoadBroker] = useState(AUTO);
@@ -35,6 +34,7 @@ export default function Dashboard({ user, onLogout }) {
   const [loadedAt, setLoadedAt] = useState(null);
   const [loading, setLoading] = useState(false);
   const [notice, setNotice] = useState("");
+  const [tableSearch, setTableSearch] = useState(""); // client-side table filter
 
   // Quick actions
   const [actionBroker, setActionBroker] = useState(AUTO);
@@ -69,16 +69,14 @@ export default function Dashboard({ user, onLogout }) {
 
   // MAC options depend on the chosen customer.
   const macOptions = useMemo(() => {
-    if (customer && customer !== PICK_CUSTOMER) {
-      return devices.macs_by_customer[customer] || [];
-    }
+    if (customer) return devices.macs_by_customer[customer] || [];
     return devices.macs;
   }, [customer, devices]);
 
   // Selecting a MAC auto-fills its customer (mirrors the Streamlit behaviour).
   function onMacChange(value) {
     setMac(value);
-    if (value && value !== PICK_MAC && (customer === PICK_CUSTOMER || !customer)) {
+    if (value && !customer) {
       const owner = Object.entries(devices.macs_by_customer).find(([, macs]) =>
         macs.includes(value)
       );
@@ -89,13 +87,12 @@ export default function Dashboard({ user, onLogout }) {
   function onCustomerChange(value) {
     setCustomer(value);
     // Reset MAC if it no longer belongs to the selected customer.
-    const allowed =
-      value && value !== PICK_CUSTOMER ? devices.macs_by_customer[value] || [] : devices.macs;
-    if (mac !== PICK_MAC && !allowed.includes(mac)) setMac(PICK_MAC);
+    const allowed = value ? devices.macs_by_customer[value] || [] : devices.macs;
+    if (mac && !allowed.includes(mac)) setMac("");
   }
 
-  const selectedMac = mac !== PICK_MAC ? mac : null;
-  const selectedCustomer = customer !== PICK_CUSTOMER ? customer : null;
+  const selectedMac = mac || null;
+  const selectedCustomer = customer || null;
 
   // Topic Quick Actions publish to: exact topic from loaded rows, else flosenso&<mac>.
   const publishTopic = useMemo(() => {
@@ -171,11 +168,22 @@ export default function Dashboard({ user, onLogout }) {
     }
   }
 
+  // Client-side table search: filters the already-loaded rows across all columns.
+  const filteredRows = useMemo(() => {
+    if (!rows) return [];
+    const q = tableSearch.trim().toLowerCase();
+    if (!q) return rows;
+    return rows.filter((r) =>
+      [r.broker_name, r.topic, r.mac_id, r.payload, r.timestamp]
+        .some((v) => String(v ?? "").toLowerCase().includes(q))
+    );
+  }, [rows, tableSearch]);
+
   function downloadCsv() {
-    if (!rows || !rows.length) return;
+    if (!filteredRows.length) return;
     const header = ["S.No", "Broker", "Topic", "MAC ID", "Payload", "Timestamp (IST)"];
     const lines = [header.join(",")];
-    rows.forEach((r, i) => {
+    filteredRows.forEach((r, i) => {
       const cells = [
         i + 1,
         r.broker_name,
@@ -222,25 +230,21 @@ export default function Dashboard({ user, onLogout }) {
       <div className="filters">
         <label>
           Customer ID
-          <select value={customer} onChange={(e) => onCustomerChange(e.target.value)}>
-            <option>{PICK_CUSTOMER}</option>
-            {devices.customers.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
+          <SearchableSelect
+            value={customer}
+            onChange={onCustomerChange}
+            options={devices.customers}
+            placeholder="Search Customer ID…"
+          />
         </label>
         <label>
           MAC ID
-          <select value={mac} onChange={(e) => onMacChange(e.target.value)}>
-            <option>{PICK_MAC}</option>
-            {macOptions.map((m) => (
-              <option key={m} value={m}>
-                {m}
-              </option>
-            ))}
-          </select>
+          <SearchableSelect
+            value={mac}
+            onChange={onMacChange}
+            options={macOptions}
+            placeholder="Search MAC ID…"
+          />
         </label>
         <label>
           Start Date
@@ -296,9 +300,24 @@ export default function Dashboard({ user, onLogout }) {
               <div className="metric-value">{metrics.topics}</div>
             </div>
           </div>
-          <div className="table-caption">
-            Showing <b>{metrics.total.toLocaleString()}</b> record(s) for{" "}
-            <code>{metrics.mac}</code> · loaded {loadedAt}
+          <div className="table-toolbar">
+            <input
+              type="search"
+              className="table-search"
+              placeholder="🔍 Search table (topic, MAC, payload, broker, time)…"
+              value={tableSearch}
+              onChange={(e) => setTableSearch(e.target.value)}
+            />
+            <span className="table-caption">
+              Showing <b>{filteredRows.length.toLocaleString()}</b>
+              {tableSearch.trim() && <> of {metrics.total.toLocaleString()}</>} record(s)
+              {!tableSearch.trim() && (
+                <>
+                  {" "}for <code>{metrics.mac}</code>
+                </>
+              )}{" "}
+              · loaded {loadedAt}
+            </span>
             <button className="btn btn-ghost" onClick={downloadCsv}>
               ⬇️ Download CSV
             </button>
@@ -316,16 +335,24 @@ export default function Dashboard({ user, onLogout }) {
                 </tr>
               </thead>
               <tbody>
-                {rows.map((r, i) => (
-                  <tr key={i}>
-                    <td>{i + 1}</td>
-                    <td>{r.broker_name}</td>
-                    <td>{r.topic}</td>
-                    <td>{r.mac_id}</td>
-                    <td className="payload-cell">{r.payload}</td>
-                    <td>{r.timestamp}</td>
+                {filteredRows.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} className="table-empty">
+                      No rows match “{tableSearch}”.
+                    </td>
                   </tr>
-                ))}
+                ) : (
+                  filteredRows.map((r, i) => (
+                    <tr key={i}>
+                      <td>{i + 1}</td>
+                      <td>{r.broker_name}</td>
+                      <td>{r.topic}</td>
+                      <td>{r.mac_id}</td>
+                      <td className="payload-cell">{r.payload}</td>
+                      <td>{r.timestamp}</td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>

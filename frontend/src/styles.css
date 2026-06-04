@@ -151,9 +151,10 @@ select:focus {
 
 /* ── Dashboard ───────────────────────────── */
 .dash {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1.5rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem 2rem;
 }
 .dash-header {
   display: flex;
@@ -224,12 +225,90 @@ h2 {
   height: 42px;
 }
 
-.table-caption {
+/* ── Searchable select (combobox) ────────── */
+.ss {
+  position: relative;
+  width: 100%;
+}
+.ss-input {
+  width: 100%;
+  padding-right: 1.8rem;
+}
+.ss-clear {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.2rem;
+}
+.ss-clear:hover {
+  color: var(--text);
+}
+.ss-list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  max-height: 260px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.15);
+}
+.ss-opt {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.ss-opt:hover {
+  background: #eff6ff;
+}
+.ss-opt-sel {
+  background: #dbeafe;
+  font-weight: 700;
+}
+.ss-empty,
+.ss-more {
+  padding: 0.45rem 0.6rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.table-toolbar {
   margin: 1rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.table-search {
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.table-caption {
   color: var(--muted);
   font-size: 0.9rem;
   display: flex;
   align-items: center;
+}
+.table-empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem;
 }
 .table-wrap {
   overflow: auto;
