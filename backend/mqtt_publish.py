@@ -32,12 +32,12 @@ def publish_message(
     )
     last_err = ""
     for cfg in targets:
+        client = mqtt.Client(
+            client_id="flosenso-api-pub",
+            callback_api_version=mqtt.CallbackAPIVersion.VERSION2,
+            clean_session=True,
+        )
         try:
-            client = mqtt.Client(
-                client_id="flosenso-api-pub",
-                callback_api_version=mqtt.CallbackAPIVersion.VERSION2,
-                clean_session=True,
-            )
             if cfg.username:
                 client.username_pw_set(cfg.username, cfg.password)
             if cfg.use_tls:
@@ -46,10 +46,15 @@ def publish_message(
             client.loop_start()
             result = client.publish(topic, message, qos=qos, retain=retain)
             result.wait_for_publish(timeout=5)
-            client.loop_stop()
-            client.disconnect()
             if result.rc == mqtt.MQTT_ERR_SUCCESS:
                 return True, cfg.name
         except Exception as exc:  # noqa: BLE001 - report to caller
             last_err = f"[{cfg.name}] {exc}"
+        finally:
+            # Always release the network loop + socket, on success or failure.
+            try:
+                client.loop_stop()
+                client.disconnect()
+            except Exception:
+                pass
     return False, last_err
