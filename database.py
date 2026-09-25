@@ -314,7 +314,7 @@ def batch_insert_messages(messages: list[dict], db_path: str = DB_PATH) -> int:
             (topic, mac_id, payload, qos, retain, broker_name, timestamp, received_at)
         VALUES
             (:topic, :mac_id, :payload, :qos, :retain, :broker_name, :timestamp,
-             strftime('%Y-%m-%d %H:%M:%S', 'now'))
+             :timestamp)
     """
     with managed_connection(db_path) as conn:
         conn.executemany(sql, messages)
@@ -351,7 +351,7 @@ def query_messages_fast(
       * ``mac_id`` only               →  ``mac_id = ?`` (``idx_messages_mac_timestamp``)
       * ``broker_name`` only          →  ``idx_messages_broker_ts``
 
-    Dates filter ``received_at``. MAC values are normalised to match ingestion.
+    Dates filter ``timestamp`` (IST wall clock). MAC values are normalised to match ingestion.
     """
     conn = get_connection(db_path)
     where: list[str] = []

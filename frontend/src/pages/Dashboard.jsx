@@ -5,8 +5,12 @@ import SearchableSelect from "../components/SearchableSelect.jsx";
 
 const AUTO = "Auto (try all)";
 
+/** Calendar date in the user's local timezone (matches `<input type="date">`). */
 function isoDate(d) {
-  return d.toISOString().slice(0, 10);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 function daysAgo(n) {
   const d = new Date();
